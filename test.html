@@ -11,94 +11,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="topdeals.css" />
-    <style>
-      body {
-        font-family: "gotham-book", sans-serif;
-      }
-      #container {
-        /* border: 1px solid black; */
-        width: 78%;
-        /* margin: auto; */
-        /* margin: 35px; */
-        margin: auto;
-      }
-      #top-deals {
-        width: 98%;
-        margin: auto;
-        /* border: 1px solid black; */
-        display: flex;
-        height: 320px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-      }
-      .img {
-        width: 250px;
-        height: 300px;
-        display: flex;
-        margin: 5px;
-        margin: auto;
-      }
-      .header {
-        text-align: center;
-        margin-right: 10px;
-        color: rgb(50, 185, 164);
-        /* font-size: 36px; */
-        /* display: flex; */
-        font-weight: 540;
-      }
-      .header1 {
-        text-align: center;
-        font-weight: 100;
-        color: rgb(98, 97, 97);
-      }
-      .headings {
-        display: flex;
-        margin-left: 480px;
-      }
-      .headings1 {
-        display: flex;
-        margin-left: 430px;
-      }
-      .fashion-steals {
-        width: 340px;
-        height: 300px;
-        display: flex;
-        margin: 5px;
-        margin: auto;
-        padding-left: 7px;
-      }
-      #hot-deals {
-        width: 98%;
-        margin: auto;
-        /* border: 1px solid black; */
-        /* display: flex; */
-        height: 300px;
-        /* display: inline; */
-        /* grid-template-columns: auto auto auto auto; */
-      }
-      .hot {
-        /* border: 1px solid black; */
-        height: 280px;
-        display: inline-block;
-        width: 200px;
-        margin: 15px;
-        line-height: 10px;
-        background-color: rgb(246, 246, 246);
-      }
-      .img-hot {
-        width: 100%;
-        height: 82%;
-      }
-      .txt {
-        text-align: center;
-        font-size: 14px;
-      }
-      .underline {
-        text-align: center;
-        font-size: 10px;
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="topdeals.js" />
   </head>
   <body>
     <div id="container">
@@ -143,21 +56,21 @@
         <h1 class="header1">STEALS</h1>
       </div>
       <div id="top-deals">
-        <div class="fashion-steals">
+        <div class="fashion-steals" id="under399">
           <img
             class="fashion-steals"
             src="https://pantaloons.imgix.net/img/app/brands/pantaloons/399.png?w=723.5&auto=format"
             alt="Half price store"
           />
         </div>
-        <div class="fashion-steals">
+        <div class="fashion-steals" id="under699">
           <img
             class="fashion-steals"
             src="https://pantaloons.imgix.net/img/app/brands/pantaloons/699.png?w=723.5&auto=format"
             alt=""
           />
         </div>
-        <div class="fashion-steals">
+        <div class="fashion-steals" id="under999">
           <img
             class="fashion-steals"
             src="https://pantaloons.imgix.net/img/app/brands/pantaloons/999.png?w=723.5&auto=format"
@@ -175,7 +88,7 @@
         <h1 class="header1">HOT</h1>
       </div>
       <div id="hot-deals">
-        <div class="hot">
+        <div class="hot" id="hotDeals">
           <img
             class="img-hot"
             src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-6959.jpg?w=434.09999999999997&auto=format"
@@ -184,7 +97,7 @@
           <p class="txt">Soft Snuggles</p>
           <p class="underline">SHOP NOW →</p>
         </div>
-        <div class="hot">
+        <div class="hot" id="hotDeals1">
           <img
             class="img-hot"
             src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-6960.jpg?w=434.09999999999997&auto=format"
@@ -193,7 +106,7 @@
           <p class="txt">Easy Tees</p>
           <p class="underline">SHOP NOW →</p>
         </div>
-        <div class="hot">
+        <div class="hot" id="hotDeals2">
           <img
             class="img-hot"
             src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-6961.jpg?w=434.09999999999997&auto=format"
@@ -202,7 +115,7 @@
           <p class="txt">Sunny Days</p>
           <p class="underline">SHOP NOW →</p>
         </div>
-        <div class="hot">
+        <div class="hot" id="hotDeals3">
           <img
             class="img-hot"
             src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-6962.jpg?w=434.09999999999997&auto=format"
@@ -219,16 +132,4 @@
   </body>
 </html>
 
-<script>
-  document.getElementById("offerPrice").addEventListener("click", active);
-  document.getElementById("handBags").addEventListener("click", active);
-  document.getElementById("stylesAt").addEventListener("click", active);
-  document.getElementById("lastOf").addEventListener("click", active);
-
-  function active() {
-    window.location.href = "product.html";
-  }
-  // myFunction(){
-  //   window.location.href = "product.html";
-  // }
-</script>
+<script src="topdeals.js"></script>

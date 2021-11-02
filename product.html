@@ -79,14 +79,7 @@
         width: 100%;
         height: 65%;
       }
-      #discStyle {
-        display: flex;
-        margin-left: 6px;
-      }
-      #discPerStyle {
-        display: flex;
-        margin-left: 6px;
-      }
+      
       .paraStyle {
         text-align: center;
         color: rgb(98, 97, 97);
@@ -98,16 +91,25 @@
         font-size: 12px;
         line-height: 20px;
       }
-      #pricingId {
+      #x {
         display: flex;
       }
-      .pricing{
-        display: flex;
+      .pricing {
+        margin-left: 70px;
+        font-weight: 600;
       }
-      #x{
-        display: flex;
-        
+      #discStyle {
+        margin-left: 15px;
+        color: rgb(193, 187, 187);
+        text-decoration: line-through;
       }
+      #discPerStyle {
+        margin-left: 15px;
+        color: rgb(238, 34, 105);
+        font-size: 16px;
+        font-weight: 100;
+      }
+     
     </style>
   </head>
   <body>
@@ -166,7 +168,7 @@
     {
       MRP: 672,
       type: "LIVING SCAPES",
-      dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
+      dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
       discountPercentage: "44% OFF",
       image_url:
@@ -175,7 +177,7 @@
     {
       MRP: 672,
       type: "LIVING SCAPES",
-      dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
+      dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
       discountPercentage: "44% OFF",
       image_url:
@@ -193,7 +195,7 @@
     {
       MRP: 672,
       type: "LIVING SCAPES",
-      dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
+      dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
       discountPercentage: "44% OFF",
       image_url:
@@ -220,7 +222,7 @@
     {
       MRP: 672,
       type: "LIVING SCAPES",
-      dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
+      dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
       discountPercentage: "44% OFF",
       image_url:
@@ -256,7 +258,7 @@
     {
       MRP: 900,
       type: "LIVING SCAPES",
-      dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
+      dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1499,
       discountPercentage: "44% OFF",
       image_url:
@@ -283,7 +285,7 @@
     {
       MRP: 900,
       type: "LIVING SCAPES",
-      dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
+      dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1499,
       discountPercentage: "44% OFF",
       image_url:
@@ -328,7 +330,7 @@
     {
       MRP: 900,
       type: "LIVING SCAPES",
-      dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
+      dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1499,
       discountPercentage: "44% OFF",
       image_url:
@@ -367,21 +369,19 @@
       var x = document.createElement("div");
       x.setAttribute("id", "x");
 
-
-
       var price = document.createElement("span");
-      price.textContent = item.MRP;
+      price.textContent = "₹" + item.MRP;
       price.setAttribute("class", "pricing");
 
       var disc = document.createElement("span");
-      disc.textContent = item.discount;
+      disc.textContent = "₹" + item.discount;
       disc.setAttribute("id", "discStyle");
 
       var discPer = document.createElement("span");
       discPer.textContent = item.discountPercentage;
       discPer.setAttribute("id", "discPerStyle");
 
-      x.append(price,disc,discPer)
+      x.append(price, disc, discPer);
 
       var btn = document.createElement("button");
       btn.textContent = "Add To Cart";
@@ -389,7 +389,7 @@
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("id", "img");
 
-      imgDiv.append(imgs, type, description,x);
+      imgDiv.append(imgs, type, description, x);
 
       document.getElementById("images").append(imgDiv);
       // imgDiv.append(x);

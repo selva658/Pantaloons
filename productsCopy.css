@@ -63,7 +63,7 @@ body {
     grid-gap: 3%;
     /* border: 1px solid violet; */
     margin-left: 30px;
-    height: 450px;
+    height: 600px;
   }
   #img {
     /* display: grid; */
@@ -74,7 +74,7 @@ body {
   }
   #imageSizing {
     width: 100%;
-    height: 65%;
+    height: 63%;
   }
   
   .paraStyle {
@@ -112,7 +112,7 @@ body {
     background-color: rgb(0, 170, 138);
     width: 100%;
     height: 30px;
-    border-radius: 4px;
+    border-radius: 2px;
     color: white;
     background-color: rgb(0, 170, 138);
     border: 1px solid  ;
@@ -155,6 +155,7 @@ body {
   font-size: 26px;
   color: rgb(64, 64, 64);
 }
+
 
 
   /*------------------------------------------------- Selva's work on Nav bar---------------------------------------------------------- */

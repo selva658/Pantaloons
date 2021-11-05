@@ -158,7 +158,7 @@
         </ul>
         <hr>
 
-
+<!-- -------------------------------------------------Riyazcode----------------------- -->
 
     <div id="mainContainer">
       <div id="leftContainer">
@@ -186,12 +186,13 @@
           <div id="sort">
             <span style="margin-top: 12px">Sort:</span>
             <span>
-              <select name="" id="filter">
+              <select name="" id="filter" onchange="sorting()">
+                <option value="lowest">--</option>
+                <option value="lowest">Price: lowest first</option>
+                <option value="highest">Price: highest first</option>
                 <option value="discount">Discount</option>
                 <option value="popula">Popular</option>
                 <option value="new arrivals">New Arivals</option>
-                <option value="lowest">Price: lowest first</option>
-                <option value="highest">Price: highest first</option>
                 <option value="most viewed">Most viewed</option>
                 <option value="most sold">Most sold</option>
               </select>
@@ -199,7 +200,7 @@
           </div>
           <hr />
         </div>
-        <div id="images">
+        <div id="rimages">
           <!-- <div class="img">Hi</div>
           <div class="img">HI</div>
           <div class="img">HI</div>
@@ -407,9 +408,29 @@
   //  var imgDiv = document.createElement("div");
   //  imgDiv.setAttribute("id", "img");
 
-  showProducts();
+  showProducts(data);
 
-  function showProducts() {
+  function sorting(){
+   var price= document.querySelector("#filter").value;
+   if(price=="lowest")
+   {
+      var com =  data.sort(function(a,b){
+            return a.MRP-b.MRP
+        })
+    }
+    if(price=="highest")
+    {
+      var com=data.sort(function(a,b){
+        return b.MRP-a.MRP
+      })
+    }
+    showProducts(com)
+  }
+
+
+
+  function showProducts(productArray) {
+    document.getElementById("rimages").innerHTML ="";
     data.map(function (item) {
       var imgs = document.createElement("img");
       imgs.setAttribute("src", item.image_url);
@@ -446,10 +467,21 @@
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("id", "img");
 
-      imgDiv.append(imgs, type, description, x);
+      var cart = document.createElement("button");
+      cart.setAttribute("id", "AddToCart")
+      cart.addEventListener("click", cartRedirecting)
+      cart.textContent = "Add To Cart"
 
-      document.getElementById("images").append(imgDiv);
+      imgDiv.append(imgs, type, description, x, cart);
+
+
+      document.getElementById("rimages").append(imgDiv);
       // imgDiv.append(x);
     });
+
+    function cartRedirecting(){
+      window.location.href = "CartPage.html"
+    }
+
   }
 </script>

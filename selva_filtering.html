@@ -10,7 +10,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="productsCopy.css">
+    <link rel="stylesheet" href="products.css">
     <!-- navbar icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- favicon link -->
@@ -18,6 +18,7 @@
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
      
      
@@ -158,23 +159,18 @@
         <hr>
 
 
-    <!---------------------------------------------------------navigation bar end ------------------------------------------->
-
-
 
     <div id="mainContainer">
       <div id="leftContainer">
-          <div id="leftBtnCont">
-              <button id="leftButton"></button>
-              <button id="leftButton"></button>
-              <button id="leftButton"></button>
-              <button id="leftButton"></button>
-              <button id="leftButton">COLOR</button>
-              <button id="leftButton"></button>
-              <button id="leftButton"></button>
-              <button id="leftButton"></button>
-
-          </div>
+        <div id="leftBtnCont">
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">category</span><span>PRODUCT TYPE</span></button>
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">percent</span><span>DISCOUNT</span></button>
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">straighten</span><span>SIZES</span></button>
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">currency_rupee</span><span>PRICE</span></button>
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">palette</span><span>COLOR</span></button>
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">checkroom</span><span>OCCASION</span></button>
+          <button id="leftButton"><span id="icons" class="material-icons-outlined">view_comfy</span><span>PATTERN</span></button>
+        </div>
       </div>
       <div id="rightContainer">
         <div id="desc">
@@ -203,22 +199,21 @@
           </div>
           <hr />
         </div>
-        <div id="rimages">
+        <div id="images">
           <!-- <div class="img">Hi</div>
           <div class="img">HI</div>
           <div class="img">HI</div>
           <div class="img">HI</div>
           <div class="img">HI</div> -->
-          
         </div>
-        <!-- <button id="AddToCart">Add to cart</button> -->
       </div>
     </div>
   </body>
 </html>
 
 <script>
-  var data = [
+     
+  var data =[
     {
       MRP: 504,
       type: "LIVING SCAPES",
@@ -409,20 +404,15 @@
         "https://pantaloons.imgix.net/img/app/product/5/513918-3870163.jpg?w=313.38000000000005&auto=format",
     },
   ];
-
+  showProducts(data)
+ 
   //  var imgDiv = document.createElement("div");
   //  imgDiv.setAttribute("id", "img");
 
- 
- //  var imgDiv = document.createElement("div");
- //  imgDiv.setAttribute("id", "img");
 
+  //sorting
 
- //sorting
- showProducts(data);
-
-    
- function sorting(){
+  function sorting(){
    var price= document.querySelector("#filter").value;
    if(price=="lowest")
    {
@@ -441,8 +431,14 @@
   
 
 
- function showProducts(productArray) {
-      document.querySelector("#rimages").innerHTML=''
+   
+   //sorting end 
+
+  
+
+
+  function showProducts(productArray) {
+      document.querySelector("#images").innerHTML=''
     productArray.map(function (item) {
       var imgs = document.createElement("img");
       imgs.setAttribute("src", item.image_url);
@@ -473,27 +469,20 @@
 
       x.append(price, disc, discPer);
 
-      // var btn = document.createElement("button");
-      // btn.textContent = "Add To Cart";
+      var btn = document.createElement("button");
+      btn.textContent = "Add To Cart";
 
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("id", "img");
-      
-      var cart = document.createElement("button");
-      cart.setAttribute("id", "AddToCart")
-      cart.addEventListener("click", cartRedirecting)
-      cart.textContent = "Add To Cart"
 
-      imgDiv.append(imgs, type, description, x, cart);
+      imgDiv.append(imgs, type, description, x);
 
-      document.getElementById("rimages").append(imgDiv);
+      document.getElementById("images").append(imgDiv);
       // imgDiv.append(x);
-
-    
     });
-
-    function cartRedirecting(){
-      window.location.href = "CartPage.html"
-    }
+    //done
   }
 </script>
+
+
+

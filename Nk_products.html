@@ -28,7 +28,11 @@
       rel="stylesheet"
     />
 
-    <style></style>
+    <style>
+        .pricing69{
+            margin-left: 130px;
+        }
+    </style>
   </head>
   <body>
     <!-- top line start -->
@@ -222,28 +226,23 @@
       </div>
       <div id="rightContainer">
         <div id="desc">
-          <h1 style="font-weight: 100">
-            Dresses & Frocks for Girls<span class="quantityMain"
+          <p id="pageinfo" style="font-weight: 100">
+            Latest Fashion Outfits<span class="quantityMain"
               >32 Products</span
             >
-          </h1>
+          </p>
           <p class="para">
-            We offer an upbeat and vibrant collection of cute frocks & dresses
-            for trendy and stylish kids of today. With a strong focus on design,
-            these dresses complement the modern lifestyle of the parents. The
-            range carries collection starting from day dresses to birthday
-            dresses to princess party dresses.
+            Shop from our finest collection of shirts, t-shirts, dresses, active wear, trousers & jeans.
           </p>
           <div id="sort">
             <span style="margin-top: 12px">Sort:</span>
             <span>
               <select name="" id="filter" onchange="sorting()">
-                <option value="lowest">--</option>
-                <option value="lowest">Price: lowest first</option>
-                <option value="highest">Price: highest first</option>
                 <option value="discount">Discount</option>
                 <option value="popula">Popular</option>
                 <option value="new arrivals">New Arivals</option>
+                <option value="lowest">Price: lowest first</option>
+                <option value="highest">Price: highest first</option>
                 <option value="most viewed">Most viewed</option>
                 <option value="most sold">Most sold</option>
               </select>
@@ -265,194 +264,326 @@
 
 <script>
   var data = [
+  {
+      MRP: 930,
+      type: "jeans",
+      brand:"PEOPLE",
+      dsc: "Blue Solid Jeans",
+      discount: 1499,
+      discountPercentage: 38,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/5/525082-3957428.jpg?w=331.4666666666667&auto=format",
+    },
     {
-      MRP: 600,
-      type: "CHALK",
-      dsc: "Printed Beige Frock",
+      MRP: 930,
+      type: "jeans",
+      brand:"PEOPLE",
+      dsc: "Black Solid Jeans",
+      discount: 1499,
+      discountPercentage: 38,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/5/561996-4812147.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 899,
+      type: "jeans",
+      brand:"BARE DENIM",
+      dsc: "Blue Tint Slim Tapered Fit Full Length Jeans",
+      discount: 1499,
+      discountPercentage: 38,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/458818-3156401.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 1399,
+      type: "jeans",
+      brand:"BARE DENIM",
+      dsc: "Grey Silver Jeans",
+      discount: 2000,
+      discountPercentage: 30,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/5/548191-4441576.jpg?w=331.4666666666667&auto=format",
+    },
+    
+    {
+      MRP: 765,
+      type: "jeans",
+      brand:"BARE DENIM",
+      dsc: "Dark Blue Full Length Jeans",
+      discount: 899,
+      discountPercentage: 15,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/461137-3191187.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 899,
+      type: "jeans",
+      brand:"BARE DENIM",
+      dsc: "Black Tint Slim Tapered Fit Full Length Jeans",
+      discount: 1499,
+      discountPercentage: 38,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/3/390196-2010127.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 1399,
+      type: "jeans",
+      brand:"BARE DENIM",
+      dsc: "Black Tint Slim Tapered Fit Full Length Jeans",
+      discount: 2000,
+      discountPercentage: 30,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/481556-3512100.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 699,
+      brand: "PEOPLE",
+      type: "jeans",
+      dsc: "Navy Printed Polo T-Shirt",
       discount: 1499,
       discountPercentage: 60,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/474415-3391958.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/507769-3850488.jpg?w=331.4666666666667&auto=format",
     },
     {
-      MRP: 600,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Net Ovarlay Party Navu Dress",
+      MRP: 699,
+      brand: "PEOPLE",
+      type: "tshirt",
+      dsc: "Navy Printed Polo T-Shirt",
       discount: 1499,
       discountPercentage: 60,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/390853-2017184.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/552715-4523208.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 600,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Cape Sleeves Casual Gathered Black Frock",
+      MRP: 699,
+      brand: "AJILE",
+      type: "tshirt",
+      dsc: "Navy Melange Graphic Crew Neck T-Shirt",
       discount: 1499,
       discountPercentage: 60,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/433492-2765449.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/3/344460-1670625.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 320,
-      type: "PANTALOONS BABY",
-      dsc: "Casual Ruffled Pink Dress",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Printed Mustard Kurta",
       discount: 1499,
       discountPercentage: 60,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/390836-2014090.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/466269-3272732.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 600,
-      type: "PANTALOONS JUNIOR",
-      dsc: "CEmbroidered Full Length Sleeveless Coral Party Frock",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Solid Lime Green Kurta",
       discount: 1499,
       discountPercentage: 60,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/433493-2765453.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/462288-3207430.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 280,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Sleeveless Ruffled Pink Dress",
+      MRP: 699,
+      brand: "BYFORD",
+      type:"tshirt",
+      dsc: "Signal Red Stripe Polo T-Shirt",
+      discount: 1499,
+      discountPercentage: 60,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/474427-3392014.jpg?w=313.38000000000005&auto=format",
+    },
+    {
+      MRP: 699,
+      brand: "BYFORD",
+      type:"tshirt",
+      dsc: "Navy Printed Polo T-Shirt",
       discount: 699,
       discountPercentage: "44% OFF",
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/385326-1963679.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/474429-3392027.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 450,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Printed Blue Dress",
+      MRP: 699,
+      brand: "BYFORD",
+      type:"shorts",
+      dsc: "Solid Grey Shorts",
       discount: 999,
       discountPercentage: 55,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/447008-2957844.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/481621-3512485.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 450,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Sleeveless Sequined Red Dress",
+      MRP: 699,
+      brand: "BYFORD",
+      type:"shorts",
+      dsc: "Solid Black Shorts",
       discount: 999,
       discountPercentage: 55,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/385322-1963663.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/531248-4034316.jpg?w=331.4666666666667&auto=format",
     },
     {
-      MRP: 800,
-      type: "ALLEN SOLLY",
-      dsc: "Pink Striped Dress",
+      MRP: 699,
+      brand: "BYFORD",
+      type:"shorts",
+      dsc: "Solid Dark Green Shorts",
+      discount: 999,
+      discountPercentage: 55,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/6/609761-6187834.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 699,
+      brand: "BYFORD",
+      type:"shorts",
+      dsc: "Solid Teal Shorts",
+      discount: 999,
+      discountPercentage: 55,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/6/625767-6071926.jpg?w=331.4666666666667&auto=format",
+    },
+    {
+      MRP: 699,
+      brand: "BYFORD",
+      type:"tshirt",
+      dsc: "Maroon Printed Polo T-Shirt",
+      discount: 999,
+      discountPercentage: 55,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/474425-3392002.jpg?w=313.38000000000005&auto=format",
+    },
+    {
+      MRP: 699,
+      brand: "RANGMANCH",
+      type:"kurta",
+      dsc: "Embroidered Coral Kurta",
       discount: 1699,
       discountPercentage: 52,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/39562682-4320335.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/467618-3291122.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 750,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Party Wear Pink Dress",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Maroon Textured Kurta",
       discount: 1499,
       discountPercentage: 50,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/390926-2021308.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/583891-5275539.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 499,
-      type: "ALLEN SOLLY",
-      dsc: "White Print Dress",
+      MRP: 699,
+      brand: "PEOPLE",
+      type:"tshirt",
+      dsc: "Maroon Solid T-Shirt",
       discount: 949,
       discountPercentage: 47,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/599817-5592210.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/544257-4374347.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 1052,
-      type: "ALLEN SOLLY",
-      dsc: "Pink Print Dress",
+      MRP: 699,
+      brand: "AJILE",
+      type:"tshirt",
+      dsc: "Navy Melange Solid Crew Neck T-Shirt",
       discount: 1999,
       discountPercentage: 47,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/599807-5592170.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/490813-3596976.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 1052,
-      type: "ALLEN SOLLY",
-      dsc: "Multi Print Dress",
+      MRP: 699,
+      brand: "BARE DENIM",
+      type:"tshirt",
+      dsc: "Navy Stripe Crew Neck T-Shirt",
       discount: 1999,
       discountPercentage: 47,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/599685-5591823.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/465520-3261851.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 440,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Puffed Sleeves Navy Dress",
+      MRP: 699,
+      brand: "BYFORD",
+      type:"tshirt",
+      dsc: "Sky Blue Printed Polo T-Shirt",
       discount: 799,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/391582-2035241.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/481182-3510109.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 550,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Solid Coral Dress",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Printed Lime Green Kurta",
       discount: 999,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/449765-3006540.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/461198-3191551.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 220,
-      type: "CHIRPIE PIE",
-      dsc: "White Frock",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Solid Mustard Kurta",
       discount: 399,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/312225-1428587.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/461196-3191542.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 495,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Solid Sleeveless Casual Pink Dress",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Solid Lime Green Kurta",
       discount: 899,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/423484-2606410.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/459129-3158255.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 275,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Lace Overlay Pink Dress",
+      MRP: 699,
+      brand: "INDUS ROUTE",
+      type:"kurta",
+      dsc: "Mustard Textured Kurta",
       discount: 499,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/391577-2035221.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/552850-4524072.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 495,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Sleeveless Party Red Frock",
+      MRP: 699,
+      brand: "PEOPLE",
+      type:"tshirt",
+      dsc: "Black Solid T-Shirt",
       discount: 899,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/414413-2444870.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/5/544251-4374307.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 825,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Sleeveless Solid Pink Party Frock",
+      MRP: 699,
+      brand: "AJILE",
+      type:"tshirt",
+      dsc: "Navy Mix & Match Crew Neck T-Shirt",
       discount: 1499,
       discountPercentage: 45,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/423481-2606388.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/458967-3157278.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 499,
-      type: "ALLEN SOLLY",
-      dsc: "Navy Print Dress",
+      MRP: 699,
+      type:"tshirt",
+      brand: "STREET ARMOR",
+      dsc: "Black T-Shirt",
       discount: 799,
       discountPercentage: 37,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/599977-5592414.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/6/618501-5935943.jpg?w=313.38000000000005&auto=format",
     },
   ];
 
@@ -478,17 +609,16 @@
     showProducts(com)
   }
 
-
   function showProducts() {
-    document.querySelector("#rimages").innerHTML=''
+    document.getElementById("rimages").innerHTML = "";
     data.map(function (item) {
       var imgs = document.createElement("img");
       imgs.setAttribute("src", item.image_url);
       imgs.setAttribute("id", "imageSizing");
 
-      var type = document.createElement("p");
-      type.textContent = item.type;
-      type.setAttribute("class", "paraStyle");
+      var brand = document.createElement("p");
+      brand.textContent = item.brand;
+      brand.setAttribute("class", "paraStyle");
 
       var description = document.createElement("p");
       description.textContent = item.dsc;
@@ -499,7 +629,7 @@
 
       var price = document.createElement("span");
       price.textContent = "₹" + item.MRP;
-      price.setAttribute("class", "pricing");
+      price.setAttribute("class", "pricing69");
 
       var disc = document.createElement("span");
       disc.textContent = "₹" + item.discount;
@@ -509,7 +639,7 @@
       discPer.textContent = item.discountPercentage + "% OFF";
       discPer.setAttribute("id", "discPerStyle");
 
-      x.append(price, disc, discPer);
+      x.append(price);
 
       var btn = document.createElement("button");
       btn.textContent = "Add To Cart";
@@ -517,20 +647,10 @@
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("id", "img");
 
-      var cart = document.createElement("button");
-      cart.setAttribute("id", "AddToCart")
-      cart.addEventListener("click", cartRedirecting)
-      cart.textContent = "Add To Cart"
-
-      imgDiv.append(imgs, type, description, x, cart);
+      imgDiv.append(imgs, brand, description, x);
 
       document.getElementById("rimages").append(imgDiv);
       // imgDiv.append(x);
     });
-
-    function cartRedirecting(){
-      window.location.href = "CartPage.html"
-    }
-
   }
 </script>

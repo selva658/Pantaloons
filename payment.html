@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="frontpage.css">
+    <link rel="stylesheet" href="payment.css">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 </head>
@@ -146,7 +147,23 @@
 
 
     <!---------------------------------------------------------navigation bar end ------------------------------------------->
+<hr>
 
-  <h1>payment</h1>
+    <div id="paycontainer">
+          <label class="fo" for="">Name</label>
+          <input class="name" type="text" placeholder="Enter account holder name">
+          <label class="fo">Card No</label>
+          <input class="card" type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
+          <label class="fo">Cvv</label>
+          <input class="cvv" type="number" placeholder="Enter your CVV">
+          <label class="fo">Expiery</label>
+          <input class="expiery" type="number" placeholder="MM/YYYY">
+          <label class="fo">Phone</label>
+          <input class="phone" type="number" placeholder="0000000000">
+          <button class="gotp">GET OTP</button>
+          <span class="or">or</span>
+          <button class="cod">CASH ON DELIVERY</button>
+    </div>
+ <script src="payment.js"></script>
 </body>
 </html>

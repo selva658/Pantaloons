@@ -1,0 +1,55 @@
+#paycontainer{
+
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(184, 171, 171);
+    padding: 20px;
+}
+.fo{
+    font-size: 25px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color:rgb(94, 85, 85);
+    
+}
+.name,.card,.cvv,.expiery,.phone{
+    height: 40px;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: silver;
+    border: 1px solid #9e9999
+}
+.name{
+    margin-left: 25px;
+}
+.cvv{
+    margin-left: 45px;
+}
+.expiery{
+    margin-left: 8px;
+}
+.phone{
+    margin-left: 25px;
+}
+.gotp,.cod{
+    margin-top: 40px;
+    height: 40px;
+    width: 20%;
+    margin-left: 20%;
+    border-radius: 5px;
+     border: 1px solid #eaeaea;
+     border: 1px solid #2ea88e;
+}
+.cod{
+    margin-left: 5%;
+    background-color: #2ea88e;
+    color: white;
+}
+.or{
+    margin-left: 40px;
+    font-size: 20px;
+}

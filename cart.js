@@ -63,7 +63,6 @@ document.querySelector(".details").innerHTML=`<h4 class="ordersum">ORDER SUMMARY
     <td><span class="underline">₹100</span><span class="free">Free</span></td></tr>
     <tr><td class="line">ORDER TOTAL</td>
       <td class="line">₹${total}</td></tr></table>
-      <p class="you">YOU HAVE SAVED ₹704.00 ON THIS ORDER</p>
       <p class="text">90 DAYS RETURN EXCLUSIVELY FOR GREENCARD MEMBER</p>
       <button class="btnc">continue</button>`
 
@@ -88,7 +87,7 @@ function discount(){
     <tr><td class="line">ORDER TOTAL</td>
       <td class="line">₹${total - total / 100 * 30}</td></tr></table>
       <p class="off">30% OFF</p>
-      <p class="you">YOU HAVE SAVED ₹704.00 ON THIS ORDER</p>
+      <p class="you">YOU HAVE SAVED 30% ON THIS ORDER</p>
       <p class="text">90 DAYS RETURN EXCLUSIVELY FOR GREENCARD MEMBER</p>
       <button class="btnc">continue</button>`
   }

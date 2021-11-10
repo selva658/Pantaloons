@@ -174,14 +174,9 @@
           <option value="wishlist">My wishlist</option>
           <option value="return">Return</option>
         </select>
-        <button class="btn_design">
-          <i class="fa fa-heart-o" aria-hidden="true"></i>
-          <div class="fav"><p>SAVED THE PRODUCT</p></div>
-        </button>
-        <button class="btn_design">
-          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-          <div class="cart"></div>
-        </button>
+        <a href="favPage.html"><button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
+        </button></a>
+       <a  href="cart.html" ><button style="color: #0daa8b;" class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a> 
       </div>
     </ul>
     <hr />
@@ -239,13 +234,10 @@
             <span>
               <select name="" id="filter" onchange="sorting()">
                 <option value="lowest">--</option>
+                <option value="asc">Ascending</option>
+                <option value="des">Descending</option>
                 <option value="lowest">Price: lowest first</option>
                 <option value="highest">Price: highest first</option>
-                <option value="discount">Discount</option>
-                <option value="popula">Popular</option>
-                <option value="new arrivals">New Arivals</option>
-                <option value="most viewed">Most viewed</option>
-                <option value="most sold">Most sold</option>
               </select>
             </span>
           </div>
@@ -260,6 +252,7 @@
         </div>
       </div>
     </div>
+    <button id="cartBtn">Go to Cart</button>
   </body>
 </html>
 
@@ -461,76 +454,140 @@
 
   showProducts(data);
 
-  function sorting(){
-   var price= document.querySelector("#filter").value;
-   if(price=="lowest")
-   {
-      var com =  data.sort(function(a,b){
-            return a.MRP-b.MRP
-        })
-    }
-    if(price=="highest")
-    {
-      var com=data.sort(function(a,b){
-        return b.MRP-a.MRP
+function sorting(){
+ var price= document.querySelector("#filter").value;
+ if(price=="lowest")
+ {
+    var com =  data.sort(function(a,b){
+          return a.MRP-b.MRP
       })
-    }
-    showProducts(com)
+  }
+  if(price=="highest")
+  {
+    var com=data.sort(function(a,b){
+      return b.MRP-a.MRP
+    })
+  }
+
+  if(price=="asc")
+  {
+    var com=data.sort(function(a,b){
+     return a.type>b.type?1:b.type>a.type?-1:0
+    })
+  }
+
+  if(price=="des")
+  {
+    var com=data.sort(function(a,b){
+      return a.type>b.type?-1:b.type>a.type?1:0
+    })
   }
 
 
-  function showProducts() {
-    document.querySelector("#rimages").innerHTML=''
-    data.map(function (item) {
-      var imgs = document.createElement("img");
-      imgs.setAttribute("src", item.image_url);
-      imgs.setAttribute("id", "imageSizing");
+  showProducts(com)
+}
 
-      var type = document.createElement("p");
-      type.textContent = item.type;
-      type.setAttribute("class", "paraStyle");
 
-      var description = document.createElement("p");
-      description.textContent = item.dsc;
-      description.setAttribute("class", "paraStyle1");
+var cartarr=JSON.parse(localStorage.getItem("datas")) || []
+var favarr=JSON.parse(localStorage.getItem("favdata")) || []
+console.log(cartarr);
 
-      var x = document.createElement("div");
-      x.setAttribute("id", "x");
+function showProducts() {
+  document.querySelector("#rimages").innerHTML=''
+  data.map(function (item) {
+    var imgs = document.createElement("img");
+    imgs.setAttribute("src", item.image_url);
+    imgs.setAttribute("id", "imageSizing");
 
-      var price = document.createElement("span");
-      price.textContent = "₹" + item.MRP;
-      price.setAttribute("class", "pricing");
+    var type = document.createElement("p");
+    type.textContent = item.type;
+    type.setAttribute("class", "paraStyle");
 
-      var disc = document.createElement("span");
-      disc.textContent = "₹" + item.discount;
-      disc.setAttribute("id", "discStyle");
+    var description = document.createElement("p");
+    description.textContent = item.dsc;
+    description.setAttribute("class", "paraStyle1");
 
-      var discPer = document.createElement("span");
-      discPer.textContent = item.discountPercentage + "% OFF";
-      discPer.setAttribute("id", "discPerStyle");
+    var x = document.createElement("div");
+    x.setAttribute("id", "x");
 
-      x.append(price, disc, discPer);
+    var price = document.createElement("span");
+    price.textContent = "₹" + item.MRP;
+    price.setAttribute("class", "pricing");
 
-      var btn = document.createElement("button");
-      btn.textContent = "Add To Cart";
+    var disc = document.createElement("span");
+    disc.textContent = "₹" + item.discount;
+    disc.setAttribute("id", "discStyle");
 
-      var imgDiv = document.createElement("div");
-      imgDiv.setAttribute("id", "img");
+    var discPer = document.createElement("span");
+    discPer.textContent = item.discountPercentage + "% OFF";
+    discPer.setAttribute("id", "discPerStyle");
 
-      var cart = document.createElement("button");
-      cart.setAttribute("id", "AddToCart")
-      cart.addEventListener("click", cartRedirecting)
-      cart.textContent = "Add To Cart"
+    x.append(price, disc, discPer);
 
-      imgDiv.append(imgs, type, description, x, cart);
+    var btn = document.createElement("button");
+    btn.textContent = "Add To Cart";
 
-      document.getElementById("rimages").append(imgDiv);
-      // imgDiv.append(x);
-    });
+    var imgDiv = document.createElement("div");
+    imgDiv.setAttribute("id", "img");
 
-    function cartRedirecting(){
-      window.location.href = "CartPage.html"
-    }
+    var btnsDiv = document.createElement("div");
+    btnsDiv.setAttribute("id", "btnsDiv")
 
-  }
+    var cart = document.createElement("button");
+    cart.addEventListener("click", function(){
+      addToCart(item)
+    })
+    cart.setAttribute("id", "AddToCart")
+    cart.textContent = "Add To Cart";
+
+    var btnfav=document.createElement("button")
+    btnfav.textContent="Add to Fav";
+    btnfav.setAttribute("id", "favBtn")
+    btnfav.addEventListener("click",function(){
+      fav(item)
+    })
+
+    btnsDiv.append(cart,btnfav);
+
+    imgDiv.append(imgs, type, description, x, btnsDiv);
+
+    document.getElementById("rimages").append(imgDiv);
+    // imgDiv.append(x);
+  });
+
+  // function cartRedirecting(){
+  //   window.location.href = "CartPage.html"
+  // }
+
+}
+
+function addToCart(item)
+{
+  if(cartarr.includes(item))
+ {
+     alert("already add to chart")
+ }
+ else{
+     alert("Added")
+ }
+ cartarr.push(item)
+ localStorage.setItem("datas",JSON.stringify(cartarr))
+}
+document.querySelector("#cartBtn").addEventListener("click",function(){
+  window.location.href="cart.html"
+})
+
+
+function fav(item)
+{
+  if(favarr.includes(item))
+ {
+     alert("already added to wishlist")
+ }
+ else{
+     alert("Added to wishlist")
+ }
+  favarr.push(item)
+  localStorage.setItem("favdata",JSON.stringify(favarr))
+}
 </script>

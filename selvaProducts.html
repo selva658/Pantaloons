@@ -10,7 +10,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="selvaProducs.css">
     <!-- navbar icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- favicon link -->
@@ -187,13 +187,11 @@
             <span style="margin-top: 12px">Sort:</span>
             <span>
               <select name="" id="filter" onchange="sorting()">
-                <option value="discount">Discount</option>
-                <option value="popula">Popular</option>
-                <option value="new arrivals">New Arivals</option>
+                <option></option>
+                <option value="asc">ascending</option>
+                <option value="des">descending</option>
                 <option value="lowest">Price: lowest first</option>
                 <option value="highest">Price: highest first</option>
-                <option value="most viewed">Most viewed</option>
-                <option value="most sold">Most sold</option>
               </select>
             </span>
           </div>
@@ -208,10 +206,12 @@
         </div>
       </div>
     </div>
+    <button id="cartbtn">go to cart</button>
   </body>
 </html>
 
 <script>
+ 
      
   var data =[
     {
@@ -396,7 +396,7 @@
     },
     {
       MRP: 900,
-      type: "LIVING SCAPES",
+      type: "ALIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1499,
       discountPercentage: "44% OFF",
@@ -426,6 +426,21 @@
         return b.MRP-a.MRP
       })
     }
+
+
+    if(price=="asc")
+    {
+      var com=data.sort(function(a,b){
+       return a.type>b.type?1:b.type>a.type?-1:0
+      })
+    }
+
+    if(price=="des")
+    {
+      var com=data.sort(function(a,b){
+        return a.type>b.type?-1:b.type>a.type?1:0
+      })
+    }
     showProducts(com)
   }
   
@@ -435,8 +450,9 @@
    //sorting end 
 
   
-
-
+   var cartarr=JSON.parse(localStorage.getItem("datas")) || []
+   var favarr=JSON.parse(localStorage.getItem("favdata")) || []
+  
   function showProducts(productArray) {
       document.querySelector("#images").innerHTML=''
     productArray.map(function (item) {
@@ -471,16 +487,58 @@
 
       var btn = document.createElement("button");
       btn.textContent = "Add To Cart";
+      btn.addEventListener("click",function(){
+        addtocart(item)
+      })
+      var btnfav=document.createElement("button")
+      btnfav.textContent="add to fav";
+      btnfav.addEventListener("click",function(){
+        fav(item)
+      })
 
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("id", "img");
+     
 
-      imgDiv.append(imgs, type, description, x);
+      imgDiv.append(imgs, type, description, x,btn,btnfav);
 
       document.getElementById("images").append(imgDiv);
       // imgDiv.append(x);
     });
-    //done
+  }
+ 
+
+  function addtocart(item)
+  {
+    if(cartarr.includes(item))
+   {
+       alert("already add to chart")
+   }
+   else{
+       alert("Added")
+   }
+   cartarr.push(item)
+   localStorage.setItem("datas",JSON.stringify(cartarr))
+  }
+  document.querySelector("#cartbtn").addEventListener("click",function(){
+    window.location.href="cart.html"
+  })
+
+
+
+
+  //fav
+  function fav(item)
+  {
+    if(favarr.includes(item))
+   {
+       alert("already added to wishlist")
+   }
+   else{
+       alert("Added to wishlist")
+   }
+    favarr.push(item)
+    localStorage.setItem("favdata",JSON.stringify(favarr))
   }
 </script>
 

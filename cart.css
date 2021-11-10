@@ -1,0 +1,144 @@
+#top{
+    height: 15px;
+     width: 100%;
+     background-color: #00aa8a ;
+     color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .pantaloons{
+    border: 1px solid red;
+    display: inline-block;
+    height: 50px;
+    width: 70%;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    
+  }
+  #panimg{
+    height: 40px;
+    
+  }
+  .pantaloonstext{
+    border: 1px solid red;
+    display: inline-block;
+    height: 50px;
+    width: 28%;
+    text-align: right;
+  }
+ 
+ #cont{
+   display: flex;
+   text-align: right;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding: 20px;
+   width: 100%;
+   
+ }
+ .divimg{
+   
+   width: 60%;
+ }
+ .divtext{
+  
+   width: 38%;
+   text-align: right;
+ }
+ .contactus{
+   text-decoration: underline;
+   color: #00aa8a;
+ }
+ #images {
+display: grid;
+grid-template-columns: 31% 31%;
+/* margin: 10px; */
+grid-gap: 3%;
+/* border: 1px solid violet; */
+margin-left: 30px;
+}
+.details{
+
+height: 400px;
+width: 30%;
+margin-left: 68%;
+margin-top: 20px;
+display: inline-block;
+position: absolute;
+/* position: fixed; */
+background-color:#f5f5f5;
+}
+.btnremove
+{
+  background-color: #00aa8a;
+  color: white;
+  width: 70%;
+  height: 40px;
+  margin-left: 65px;
+  margin-top: 10px;
+  border: 1px solid #00aa8a;
+  border-radius: 5px;
+}
+.you{
+  color: #00aa8a;
+  text-align: center;
+}
+.prod{
+  color: #00aa8a;
+}
+.ordersum{
+  margin-left: 150px;
+}
+tr,td{
+  height: 30px;
+  width: 80%;
+}
+.line{
+  border-top: 1px solid black;
+}
+.text{
+  text-align: center;
+  font-size: 12px;
+  width: 50%;
+  margin: auto;
+  line-height: 20px;
+}
+.prod{
+  color: #00aa8a;
+}
+.tab{
+  margin-left: 72%;
+  margin-top: 50px;
+ 
+}
+.apply{
+  border: 1px solid #00aa8a;
+  background-color: white;
+  width: 200%;
+  height: 30px;
+  border-radius: 5px;
+}
+.underline{
+  text-decoration: line-through;
+}
+.free
+{
+  color: #00aa8a;
+}
+.cartsec{
+  margin-left: 50px;
+}
+.btnc
+{
+text-align: center;
+margin-top: 20px;
+margin-left: 50px;
+height: 50px;
+width: 80%;
+color: white;
+border: none;
+font-size: 20px;
+background-color:  #00aa8a;
+border-radius: 5px;
+}

@@ -174,10 +174,13 @@
           <option value="wishlist">My wishlist</option>
           <option value="return">Return</option>
         </select>
-        <a href="favPage.html"><button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
-        </button></a>
-       <a  href="cart.html" ><button style="color: #0daa8b;" class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a> 
-        
+        <button class="btn_design">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <div class="fav"><p>SAVED THE PRODUCT</p></div>
+        </button>
+        <button class="btn_design">
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <div class="cart"></div>
         </button>
       </div>
     </ul>
@@ -257,31 +260,31 @@
 <script>
   var data = [
     {
-      MRP: 399,
-      type: "FOREVER GLAM",
-      dsc: "Women Solid Ballerinas",
-      discount: 699,
-      discountPercentage: 43,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/491309-3600826.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 270,
-      type: "PANTALOONS JUNIOR",
-      dsc: "Red Graphic T-Shirt",
-      discount: 599,
-      discountPercentage: 55,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/404858-2261134.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 162,
-      type: "POPPERS",
-      dsc: "White Print T-Shirt",
-      discount: 269,
+      MRP: 599,
+      type: "DREAMZ",
+      dsc: "Printed Dusty Pink Pyjama",
+      discount: 1000,
       discountPercentage: 40,
       image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/533413-4079508.jpg?w=313.38000000000005&auto=format",
+        "https://pantaloons.imgix.net/img/app/product/4/470218-3333540.jpg?w=313.38000000000005&auto=format",
+    },
+    {
+      MRP: 599,
+      type: "DREAMZ",
+      dsc: "Printed Dark Blue Pyjamas",
+      discount: 1200,
+      discountPercentage: 50,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/481218-3510337.jpg?w=313.38000000000005&auto=format",
+    },
+    {
+      MRP: 799,
+      type: "DREAMZ",
+      dsc: "Printed Pink Nightwear",
+      discount: 1000,
+      discountPercentage: 20,
+      image_url:
+        "https://pantaloons.imgix.net/img/app/product/4/460891-3190057.jpg?w=313.38000000000005&auto=format",
     },
     {
       MRP: 300,
@@ -433,8 +436,7 @@
   }
 
 
-  var cartarr=JSON.parse(localStorage.getItem("datas")) || []
-  var favarr=JSON.parse(localStorage.getItem("favdata")) || []
+  var cartarr=JSON.parse(localStorage.getItem("cartData")) || []
   console.log(cartarr);
 
   function showProducts() {
@@ -475,26 +477,14 @@
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("id", "img");
 
-      var btnsDiv = document.createElement("div");
-      btnsDiv.setAttribute("id", "btnsDiv")
-
       var cart = document.createElement("button");
       cart.addEventListener("click", function(){
         addToCart(item)
       })
       cart.setAttribute("id", "AddToCart")
-      cart.textContent = "Add To Cart";
+      cart.textContent = "Add To Cart"
 
-      var btnfav=document.createElement("button")
-      btnfav.textContent="Add to Fav";
-      btnfav.setAttribute("id", "favBtn")
-      btnfav.addEventListener("click",function(){
-        fav(item)
-      })
-
-      btnsDiv.append(cart,btnfav);
-
-      imgDiv.append(imgs, type, description, x, btnsDiv);
+      imgDiv.append(imgs, type, description, x, cart);
 
       document.getElementById("rimages").append(imgDiv);
       // imgDiv.append(x);
@@ -519,22 +509,6 @@
    localStorage.setItem("datas",JSON.stringify(cartarr))
   }
   document.querySelector("#cartBtn").addEventListener("click",function(){
-    window.location.href="cart.html"
+    window.location.href="selvaCart.html"
   })
-
-
-  var favItems = document.getElementById("favId").addEventListener("click")
-
-  function fav(item)
-  {
-    if(favarr.includes(item))
-   {
-       alert("already added to wishlist")
-   }
-   else{
-       alert("Added to wishlist")
-   }
-    favarr.push(item)
-    localStorage.setItem("favdata",JSON.stringify(favarr))
-  }
 </script>

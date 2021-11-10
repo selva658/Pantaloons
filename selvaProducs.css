@@ -36,7 +36,7 @@ body {
     color: gray;
     font-size: 18px;
     font-weight: 100;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   .para {
     color: rgb(84, 83, 83);
@@ -56,14 +56,13 @@ body {
     margin-left: 80%;
     color: rgb(89, 87, 87);
   }
-  #rimages {
+  #images {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 31% 31% 31%;
     /* margin: 10px; */
     grid-gap: 3%;
     /* border: 1px solid violet; */
     margin-left: 30px;
-    height: 450px;
   }
   #img {
     /* display: grid; */
@@ -107,41 +106,6 @@ body {
     font-weight: 100;
   }
 
-  #AddToCart{
-    /* display: flex; */
-    margin-top: 7px;
-    background-color: rgb(0, 170, 138);
-    width: 72%;
-    height: 30px;
-    border-radius: 4px;
-    color: white;
-    background-color: rgb(0, 170, 138);
-    border: 1px solid  ;
-}
-#AddToCart:hover {
-    background-color: rgb(11, 108, 90) ;
-    font-weight: 550;
-}
-#favBtn{
-  /* display: flex; */
-  margin-top: 7px;
-    background-color: rgb(0, 170, 138);
-    /* width: 27%; */
-    height: 30px;
-    border-radius: 4px;
-    color: white;
-    background-color: rgb(0, 170, 138);
-    border: 1px solid  ;
-
-}
-#favBtn:hover{
-  background-color: rgb(11, 108, 90) ;
-  font-weight: 550;
-}
-#btnsDiv{
-  display: flex;
-}
-
 /*---------- products page left side button------------- */
 #leftBtnCont{
     margin-top: 10px;
@@ -170,10 +134,6 @@ body {
     font-size: 25px;
     margin-left: 10px;
     margin-right: 20px;
-}
-#pageinfo{
-  font-size: 26px;
-  color: rgb(64, 64, 64);
 }
 
 
@@ -376,23 +336,5 @@ ul li:hover>div>ul{
     font-size: 16px;
     line-height: 5px;
     margin-top: 15px;
-}
-
-
-
-
-.cartbtn,.favbtn{
-  background-color: #00aa8a;
-  width: 40%;
-  height: 30px;
-  margin-left: 5%;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  color: white;
-}
-.btn_design:hover{
-  color: burlywood;
-  font-size: 25px;
 }
 /*---------------------------------------------- hover visibility end------------------------------------------------------*/

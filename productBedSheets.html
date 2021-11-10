@@ -146,12 +146,9 @@
            <option value="wishlist">My wishlist</option>
            <option value="return">Return</option>
          </select>
-         <button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
-        <div class="fav"><p>SAVED THE PRODUCT</p></div>
-        </button>
-         <button class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-        <div class="cart"></div>
-        </button>
+         <a href="favPage.html"><button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
+         </button></a>
+        <a  href="cart.html" ><button style="color: #0daa8b;" class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a> 
         
         
         </div>
@@ -188,13 +185,10 @@
             <span>
               <select name="" id="filter" onchange="sorting()">
                 <option value="lowest">--</option>
+                <option value="asc">Ascending</option>
+                <option value="des">Descending</option>
                 <option value="lowest">Price: lowest first</option>
                 <option value="highest">Price: highest first</option>
-                <option value="discount">Discount</option>
-                <option value="popula">Popular</option>
-                <option value="new arrivals">New Arivals</option>
-                <option value="most viewed">Most viewed</option>
-                <option value="most sold">Most sold</option>
               </select>
             </span>
           </div>
@@ -209,6 +203,7 @@
         </div>
       </div>
     </div>
+    <button id="cartBtn">Go to Cart</button>
   </body>
 </html>
 
@@ -219,7 +214,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 899,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511030-4269738.jpg?w=313.38000000000005&auto=format",
     },
@@ -228,7 +223,7 @@
       type: "LIVING SCAPES",
       dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511047-3840729.jpg?w=313.38000000000005&auto=format",
     },
@@ -237,7 +232,7 @@
       type: "LIVING SCAPES",
       dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511051-3840750.jpg?w=313.38000000000005&auto=format",
     },
@@ -246,7 +241,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 899,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513965-3870407.jpg?w=313.38000000000005&auto=format",
     },
@@ -255,7 +250,7 @@
       type: "LIVING SCAPES",
       dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511033-3840662.jpg?w=313.38000000000005&auto=format",
     },
@@ -264,7 +259,7 @@
       type: "LIVING SCAPES",
       dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 899,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511046-4266159.jpg?w=313.38000000000005&auto=format",
     },
@@ -273,7 +268,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511043-3840709.jpg?w=313.38000000000005&auto=format",
     },
@@ -282,7 +277,7 @@
       type: "LIVING SCAPES",
       dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511035-3840671.jpg?w=313.38000000000005&auto=format",
     },
@@ -291,7 +286,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 899,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511026-4269724.jpg?w=313.38000000000005&auto=format",
     },
@@ -300,7 +295,7 @@
       type: "LIVING SCAPES",
       dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513913-4266415.jpg?w=313.38000000000005&auto=format",
     },
@@ -309,7 +304,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511049-3840740.jpg?w=313.38000000000005&auto=format",
     },
@@ -318,7 +313,7 @@
       type: "LIVING SCAPES",
       dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511032-3840656.jpg?w=313.38000000000005&auto=format",
     },
@@ -327,7 +322,7 @@
       type: "LIVING SCAPES",
       dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513923-3870194.jpg?w=313.38000000000005&auto=format",
     },
@@ -336,7 +331,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/538832-4204175.jpg?w=313.38000000000005&auto=format",
     },
@@ -345,7 +340,7 @@
       type: "LIVING SCAPES",
       dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511044-3840714.jpg?w=313.38000000000005&auto=format",
     },
@@ -354,7 +349,7 @@
       type: "LIVING SCAPES",
       dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513931-4276006.jpg?w=313.38000000000005&auto=format",
     },
@@ -363,7 +358,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513914-3870143.jpg?w=313.38000000000005&auto=format",
     },
@@ -372,7 +367,7 @@
       type: "LIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/511032-3840656.jpg?w=313.38000000000005&auto=format",
     },
@@ -381,7 +376,7 @@
       type: "LIVING SCAPES",
       dsc: "Indigo Era Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1199,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513913-4266415.jpg?w=313.38000000000005&auto=format",
     },
@@ -390,16 +385,16 @@
       type: "LIVING SCAPES",
       dsc: "Classique Magic Collectionprinted Cotton Queen Bedsheet With 2 Pillow Covers",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/538833-4270208.jpg?w=313.38000000000005&auto=format",
     },
     {
       MRP: 900,
-      type: "LIVING SCAPES",
+      type: "ALIVING SCAPES",
       dsc: "Satrangi Collection-Printed Cotton Bedsheet With 1 pillow cover",
       discount: 1499,
-      discountPercentage: "44% OFF",
+      discountPercentage: 44,
       image_url:
         "https://pantaloons.imgix.net/img/app/product/5/513918-3870163.jpg?w=313.38000000000005&auto=format",
     },
@@ -407,81 +402,143 @@
 
   //  var imgDiv = document.createElement("div");
   //  imgDiv.setAttribute("id", "img");
-
   showProducts(data);
 
-  function sorting(){
-   var price= document.querySelector("#filter").value;
-   if(price=="lowest")
-   {
-      var com =  data.sort(function(a,b){
-            return a.MRP-b.MRP
-        })
-    }
-    if(price=="highest")
-    {
-      var com=data.sort(function(a,b){
-        return b.MRP-a.MRP
+function sorting(){
+ var price= document.querySelector("#filter").value;
+ if(price=="lowest")
+ {
+    var com =  data.sort(function(a,b){
+          return a.MRP-b.MRP
       })
-    }
-    showProducts(com)
+  }
+  if(price=="highest")
+  {
+    var com=data.sort(function(a,b){
+      return b.MRP-a.MRP
+    })
+  }
+
+  if(price=="asc")
+  {
+    var com=data.sort(function(a,b){
+     return a.type>b.type?1:b.type>a.type?-1:0
+    })
+  }
+
+  if(price=="des")
+  {
+    var com=data.sort(function(a,b){
+      return a.type>b.type?-1:b.type>a.type?1:0
+    })
   }
 
 
-
-  function showProducts(productArray) {
-    document.getElementById("rimages").innerHTML ="";
-    data.map(function (item) {
-      var imgs = document.createElement("img");
-      imgs.setAttribute("src", item.image_url);
-      imgs.setAttribute("id", "imageSizing");
-
-      var type = document.createElement("p");
-      type.textContent = item.type;
-      type.setAttribute("class", "paraStyle");
-
-      var description = document.createElement("p");
-      description.textContent = item.dsc;
-      description.setAttribute("class", "paraStyle1");
-
-      var x = document.createElement("div");
-      x.setAttribute("id", "x");
-
-      var price = document.createElement("span");
-      price.textContent = "₹" + item.MRP;
-      price.setAttribute("class", "pricing");
-
-      var disc = document.createElement("span");
-      disc.textContent = "₹" + item.discount;
-      disc.setAttribute("id", "discStyle");
-
-      var discPer = document.createElement("span");
-      discPer.textContent = item.discountPercentage;
-      discPer.setAttribute("id", "discPerStyle");
-
-      x.append(price, disc, discPer);
-
-      var btn = document.createElement("button");
-      btn.textContent = "Add To Cart";
-
-      var imgDiv = document.createElement("div");
-      imgDiv.setAttribute("id", "img");
-
-      var cart = document.createElement("button");
-      cart.setAttribute("id", "AddToCart")
-      cart.addEventListener("click", cartRedirecting)
-      cart.textContent = "Add To Cart"
-
-      imgDiv.append(imgs, type, description, x, cart);
+  showProducts(com)
+}
 
 
-      document.getElementById("rimages").append(imgDiv);
-      // imgDiv.append(x);
-    });
+var cartarr=JSON.parse(localStorage.getItem("datas")) || []
+var favarr=JSON.parse(localStorage.getItem("favdata")) || []
+console.log(cartarr);
 
-    function cartRedirecting(){
-      window.location.href = "CartPage.html"
-    }
+function showProducts() {
+  document.querySelector("#rimages").innerHTML=''
+  data.map(function (item) {
+    var imgs = document.createElement("img");
+    imgs.setAttribute("src", item.image_url);
+    imgs.setAttribute("id", "imageSizing");
 
-  }
+    var type = document.createElement("p");
+    type.textContent = item.type;
+    type.setAttribute("class", "paraStyle");
+
+    var description = document.createElement("p");
+    description.textContent = item.dsc;
+    description.setAttribute("class", "paraStyle1");
+
+    var x = document.createElement("div");
+    x.setAttribute("id", "x");
+
+    var price = document.createElement("span");
+    price.textContent = "₹" + item.MRP;
+    price.setAttribute("class", "pricing");
+
+    var disc = document.createElement("span");
+    disc.textContent = "₹" + item.discount;
+    disc.setAttribute("id", "discStyle");
+
+    var discPer = document.createElement("span");
+    discPer.textContent = item.discountPercentage + "% OFF";
+    discPer.setAttribute("id", "discPerStyle");
+
+    x.append(price, disc, discPer);
+
+    var btn = document.createElement("button");
+    btn.textContent = "Add To Cart";
+
+    var imgDiv = document.createElement("div");
+    imgDiv.setAttribute("id", "img");
+
+    var btnsDiv = document.createElement("div");
+    btnsDiv.setAttribute("id", "btnsDiv")
+
+    var cart = document.createElement("button");
+    cart.addEventListener("click", function(){
+      addToCart(item)
+    })
+    cart.setAttribute("id", "AddToCart")
+    cart.textContent = "Add To Cart";
+
+    var btnfav=document.createElement("button")
+    btnfav.textContent="Add to Fav";
+    btnfav.setAttribute("id", "favBtn")
+    btnfav.addEventListener("click",function(){
+      fav(item)
+    })
+
+    btnsDiv.append(cart,btnfav);
+
+    imgDiv.append(imgs, type, description, x, btnsDiv);
+
+    document.getElementById("rimages").append(imgDiv);
+    // imgDiv.append(x);
+  });
+
+  // function cartRedirecting(){
+  //   window.location.href = "CartPage.html"
+  // }
+
+}
+
+function addToCart(item)
+{
+  if(cartarr.includes(item))
+ {
+     alert("already add to chart")
+ }
+ else{
+     alert("Added")
+ }
+ cartarr.push(item)
+ localStorage.setItem("datas",JSON.stringify(cartarr))
+}
+document.querySelector("#cartBtn").addEventListener("click",function(){
+  window.location.href="cart.html"
+})
+
+
+function fav(item)
+{
+  if(favarr.includes(item))
+ {
+     alert("already added to wishlist")
+ }
+ else{
+     alert("Added to wishlist")
+ }
+  favarr.push(item)
+  localStorage.setItem("favdata",JSON.stringify(favarr))
+}
+  
 </script>

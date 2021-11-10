@@ -481,7 +481,7 @@
       
       var cart = document.createElement("button");
       cart.setAttribute("id", "AddToCart")
-      cart.addEventListener("click", cartRedirecting)
+      cart.addEventListener("click", addtocart)
       cart.textContent = "Add To Cart"
 
       imgDiv.append(imgs, type, description, x, cart);
@@ -491,6 +491,23 @@
 
     
     });
+
+    
+    function addtocart(item)
+    {
+      if(cartarr.includes(item))
+    {
+        alert("already add to chart")
+    }
+    else{
+        alert("Added")
+    }
+    cartarr.push(item)
+    localStorage.setItem("datas",JSON.stringify(cartarr))
+    }
+    document.querySelector("#cartbtn").addEventListener("click",function(){
+      window.location.href="CartPage.html"
+    })
 
     function cartRedirecting(){
       window.location.href = "CartPage.html"

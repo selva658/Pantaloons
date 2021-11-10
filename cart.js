@@ -39,7 +39,7 @@ event.map(function (item) {
  btn.setAttribute("class","btnremove")
  btn.textContent="Remove";
  btn.addEventListener("click",function(){
-   remove(item)
+  remove(item)
  })
 
 
@@ -65,12 +65,13 @@ document.querySelector(".details").innerHTML=`<h4 class="ordersum">ORDER SUMMARY
       <td class="line">₹${total}</td></tr></table>
       <p class="text">90 DAYS RETURN EXCLUSIVELY FOR GREENCARD MEMBER</p>
       <button class="btnc">continue</button>`
-
-function remove(item){
-cart.splice(item,1)
+//console.log(cart)
+function remove(item) { 
+cart.splice(cart.indexOf(item),1)
 localStorage.setItem("datas",JSON.stringify(cart))
-window.location.reload(true)
+ window.location.reload(true)
 }
+
 
 document.querySelector("#apply").addEventListener("click",discount)
 function discount(){

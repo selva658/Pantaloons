@@ -96,6 +96,9 @@ function discount(){
     alert("Not vaild Coupon Code")
   }
   document.querySelector("#val").value = "";
+  document.querySelector(".btnc").addEventListener("click",function(){
+    window.location.href="address.html"
+    })
 }
 
 document.querySelector(".btnc").addEventListener("click",function(){

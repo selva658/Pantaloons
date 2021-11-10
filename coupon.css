@@ -1,0 +1,23 @@
+
+        div{
+            height: 300px;
+            width: 40%;
+            margin: auto;
+            background-color:#f5f5f5;
+            padding: 20px;
+        }
+        .icon{
+            text-align: center;
+            font-size: 20px;
+        }
+        input{
+            width: 78%;
+            height: 40px;
+        }
+        button{
+            width: 20%;
+            height: 40px;
+        }
+        p,h2{
+            text-align: center;
+        }

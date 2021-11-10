@@ -1,0 +1,11 @@
+.btnremove
+{
+  background-color: #00aa8a;
+  color: white;
+  width: 70%;
+  height: 40px;
+  margin-left: 65px;
+  margin-top: 10px;
+  border: 1px solid #00aa8a;
+  border-radius: 5px;
+}

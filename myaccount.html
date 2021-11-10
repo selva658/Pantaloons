@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pantaloons Offical Online Store-Lightning Deals like Never Before you have used</title>
-    <link rel="stylesheet" href="frontpage.css">
-    <!-- navbar icons link -->
+    <title>pantaloons user order details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- favicon link -->
-    <link rel="manifest" href="/site.webmanifest">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="frontpage.css">
+        <!-- favicon link -->
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+         <link rel="stylesheet" href="myaccount.css">
 </head>
 <body>
-
-    <!-- top line start -->
+        <!-- top line start -->
     <a href=""><div id="top">Diwali Dhamaka: Upto 60% Off + Extra 20% Off on orders of Rs. 3500 & above. Use Coupon: DIWALISALE | * T & C Apply. Shop Now </div></a>
     <!-- top line end -->
 
@@ -136,38 +135,84 @@
            <option value="return">Return</option>
          </select>
          <a href="fav.html"><button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
-        </button></a>
-       <a class="cartref" href="cart.html" ><button class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 
+         </button></a>
+        <a class="cartref" href="cart.html" ><button class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 
+         
+         </button></a>
         
-        </button></a>
         
-        
-        </div> 
+        </div>
         </ul>
+        <hr>
+<!---------------------------------------------------- navigation bar end ----------------------------------------------------------------------->
+    
+    <div id="container">
 
+        <!------------------------------------------ left side buttons start  ------------------------------------------------------------------>
+     <div class="left">
+         <button id="order" class="leftbtn"><i class="fa fa-refresh" aria-hidden="true"></i><span class="leftspan">ORDER HISTORY</span></button>
+         <button id="credits" class="leftbtn"><i class="fa fa-credit-card" aria-hidden="true"></i><span class="leftspan">PANTALOONS CREDITS</span></button>
+         <button class="leftbtn"><i class="fa fa-address-book" aria-hidden="true"></i><span class="leftspan">ACCOUNT & INFORMATION</span></button>
+         <button class="leftbtn"><i class="fa fa-credit-card" aria-hidden="true"></i><span class="leftspan">GREEN CARD POINTS</span></button>
+         <button class="leftbtn"><i class="fa fa-heart" aria-hidden="true"></i><span class="leftspan">WISHLIST ITEMS</span></button>
+         <button class="leftbtn"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="leftspan">MY ADDRESSES</span></button>
+         <button class="leftbtn"><i class="fa fa-unlock-alt" aria-hidden="true"></i><span class="leftspan">CHANGE PASSWORD</span></button>
+         <button class="leftbtn"><i class="fa fa-power-off" aria-hidden="true"></i><span class="leftspan">LOGOUT</span></button>
+      
+     </div>
+  <!------------------------------------------------- left side buttons end  ----------------------------------------------------------------------->
 
-    <!---------------------------------------------------------navigation bar end ------------------------------------------->
+  <!------------------------------------------------- right side contents display start ------------------------------------------------------------->
 
+     <div class="right">
+         <!-- orderhistory -->
+         
+              <h3>Order History</h3>
+              <hr>
+              <div id="orderhis">
+          <!-- 1st part start -->
+              <div><button id="recent" class="ord">Recent Order</button>
+                <div id="hidden">
+                    <p class="rightp">No Recent orders placed</p>
+           
+                <p>Displaying your recent 5 orders</p>
+                <p>All returns are subject to<a class="anch" href="">Pantaloons' Return Policy</a> </p>
+           
+                </div>
+            </div>
+     
+        <!-- 1st part end -->
+ 
+        <!-- 2st part start -->
 
-    <!------------------------------------------------------- main page start ----------------------------------------------->
-    <div id="grid">
-    <input type="radio" name="position" checked />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <main id="carousel">
-      <div class="item"><img class="firstimg" src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-8923.jpg"></div>
-      <div class="item"><img class="firstimg" src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-8895.jpg?w=1519&auto=format"></div>
-      <div class="item"><img class="firstimg"  src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-8892.jpg?w=1519&auto=format"></div>
-      <div class="item"><img class="firstimg" src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-8893.jpg?w=1519&auto=format"></div>
-      <div class="item"><img class="firstimg" src="https://pantaloons.imgix.net/img/app/shopmedia/production/8/8-30-8891.jpg?w=1519&auto=format"></div>
-      <main>
+              <div><button id="past" class="ord">Past Order</button>
+              <div id="hid">
+                  <span>Show orders placed between</span><Input type="text" placeholder="DD-MM-YYYY"></Input><button class="check">check</button>
+                  <p>All returns are subject to <a class="anch" href=""> Pantaloons's Return Policy</a></p>
+              </div>
+            </div>
+        <!-- 2st part end -->
+        <!-- 3rd part start -->
+              <div><button id="offline" class="ord">Offline Order</button>
+                <div id="hidd">
+                    <p class="rightp">No Recent orders placed</p>
+                    <p>Displaying your recent 5 orders</p>
+                    <p>All returns are subject to <a class="anch" href="">Pantaloons' Return Policy</a></p>
+            
+                </div>
+            </div></div>
+        <!-- 3rd part end -->
+            </div>  
+     </div>
+     
+
     </div>
-    <!---------------------------------------------------------- main page end ------------------------------------------------>
+     <!------------------------------------------------- right side contents display end ------------------------------------------------------------->
 </body>
-
-
-<script src="/fontpage.js"></script>
+<script src="myaccount.js"></script>
 </html>
+
+
+
+
 

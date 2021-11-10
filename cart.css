@@ -112,7 +112,7 @@ tr,td{
   margin-top: 50px;
  
 }
-.apply{
+#apply{
   border: 1px solid #00aa8a;
   background-color: white;
   width: 200%;
@@ -141,4 +141,22 @@ border: none;
 font-size: 20px;
 background-color:  #00aa8a;
 border-radius: 5px;
+}
+.off
+{
+  margin-left:40%;
+  border: 1px solid #00aa8a;
+  background-color: white;
+  width: 20%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+#val
+{
+  border: 1px solid #00aa8a;
+  background-color: white;
+  height: 25px;
+  border-radius: 5px;
+  margin-left: 5px;
 }

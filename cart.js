@@ -73,9 +73,29 @@ localStorage.setItem("datas",JSON.stringify(cart))
 window.location.reload(true)
 }
 
-document.querySelector(".apply").addEventListener("click",discount)
+document.querySelector("#apply").addEventListener("click",discount)
 function discount(){
-window.location.href="coupon.html"
+  var dis = document.querySelector("#val").value;
+  if (dis == "masai30")
+  {
+    document.querySelector(".details").innerHTML=`<h4 class="ordersum">ORDER SUMMARY</h4><table class="cartsec">
+<tr><td>order value</td>
+<td>₹${total}</td>
+</tr>
+<tr>
+    <td>shipping</td>
+    <td><span class="underline">₹100</span><span class="free">Free</span></td></tr>
+    <tr><td class="line">ORDER TOTAL</td>
+      <td class="line">₹${total - total / 100 * 30}</td></tr></table>
+      <p class="off">30% OFF</p>
+      <p class="you">YOU HAVE SAVED ₹704.00 ON THIS ORDER</p>
+      <p class="text">90 DAYS RETURN EXCLUSIVELY FOR GREENCARD MEMBER</p>
+      <button class="btnc">continue</button>`
+  }
+  else {
+    alert("Not vaild Coupon Code")
+  }
+  document.querySelector("#val").value = "";
 }
 
 document.querySelector(".btnc").addEventListener("click",function(){

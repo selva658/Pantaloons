@@ -1,42 +1,45 @@
 body{
 font-family: Arial, Helvetica, sans-serif;
+margin: 0px;
+padding: 0px;
 }
-#name{
+#nkname{
     color:rgba(93, 211, 201, 0.822);
     font-size: 100%;
 
 }
-#heading{
+#nkheading{
     font-size: 250%;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-#topbrands{
+#nktopbrands{
     /* border: 1px solid red; */
     height: 500px;
     width: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
     margin: auto;
     grid-gap:5px;
     
 }
-.subDiv{
+.nksubDiv{
     /* border: 1px solid red; */
-    height: 45%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
     margin: 10px;
     position: relative;
     
 }
-img{
+.nksubDiv img{
     width: 100%;
     height: 100%;
     position: absolute;
 }
-.data{
+.nkdata{
     position: relative;
     width: 35%;
     margin-left: 65%;
@@ -44,46 +47,47 @@ img{
     
     
 }
-span>a{
+.nkdata>span>a{
   text-decoration: none;
   color: white; 
 }
-hr{
+a hr{
     width: 80%;
     border-color: white;
     margin-left: 0px;
     background-color:white;
 
 }
-span{
-    font-size: 15px;
+.nkdata>span{
+    font-size: 13px;
+    font-weight: bold;
 }
 
-#categoriesInFocus{
+#nkcategoriesInFocus{
     /* border: 1px solid red; */
     height: 600px;
     width: 90%;
     margin: auto;
 }
-#image{
+#nkimage{
     
     height: 40%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 2%;
 }
-#image>div{
+#nkimage>div{
     /* border: 1px solid red; */
     height: 100%;
     width: 20%;
 
 }
-#imageName{
+#nkimageName{
     height: 5%;
     display: flex;
     justify-content: space-evenly;
 }
-#imageName>div{
+#nkimageName>div{
     /* border: 1px solid green; */
     height: 99%;
     width: 20%;
@@ -91,22 +95,27 @@ span{
     font-size: 20px;  
     font-family: 'Courier New', monospace;  
 }
-#imageName>div>a{
+#nkimageName>div>a{
     text-decoration: none;
     color: black;
 }
-#image>div>a>img{
+#nkimage>div>a>img{
     height: 100%;
     position: relative;
 }
-.bannerDiv{
+.nkbannerDiv{
     height: 60vh;
     width: 100%;
     margin-top: 5%;
     /* border: 1px solid red; */
 }
-.bannerDiv>a>img{
+.nkbannerDiv>a>img{
     height: 60%;
+}
+.nkbannerDiv img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 

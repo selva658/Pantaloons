@@ -53,7 +53,7 @@ btn.addEventListener("click",function(){
 }
 
 function remove(item){
-favdatas.splice(item,1)
+favdatas.splice(favdatas.indexOf(item),1)
 localStorage.setItem("favdata",JSON.stringify(favdatas))
 window.location.reload(true)
 }

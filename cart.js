@@ -39,7 +39,7 @@ event.map(function (item) {
  btn.setAttribute("class","btnremove")
  btn.textContent="Remove";
  btn.addEventListener("click",function(){
-   remove(item)
+  remove(item)
  })
 
 
@@ -56,28 +56,55 @@ var total=cart.reduce(function(acc,c){
 console.log(total)
 document.querySelector(".details").innerHTML=`<h4 class="ordersum">ORDER SUMMARY</h4><table class="cartsec">
 <tr><td>Order value</td>
-<td>₹${total}</td>
+<td>₹${Math.floor(total)}</td>
 </tr>
- <tr class="prod"></tr>
+<tr>
     <td>Shipping</td>
     <td><span class="underline">₹100 </span><span class="free">Free</span></td></tr>
     <tr><td class="line">ORDER TOTAL</td>
-      <td class="line">₹${total>1000?total-702:total}</td></tr></table>
-      <p class="you">YOU HAVE SAVED ₹704.00 ON THIS ORDER</p>
+      <td class="line">₹${Math.floor(total)}</td></tr></table>
       <p class="text">90 DAYS RETURN EXCLUSIVELY FOR GREENCARD MEMBER</p>
       <button class="btnc">continue</button>`
-
-function remove(item){
-cart.splice(item,1)
+//console.log(cart)
+function remove(item) { 
+cart.splice(cart.indexOf(item),1)
 localStorage.setItem("datas",JSON.stringify(cart))
-window.location.reload(true)
+ window.location.reload(true)
 }
 
-document.querySelector(".apply").addEventListener("click",discount)
+
+document.querySelector("#apply").addEventListener("click",discount)
 function discount(){
-window.location.href="coupon.html"
+  var dis = document.querySelector("#val").value;
+  if (dis == "masai30")
+  {
+    document.querySelector(".details").innerHTML=`<h4 class="ordersum">ORDER SUMMARY</h4><table class="cartsec">
+<tr><td>Order value</td>
+<td>₹${total}</td>
+</tr>
+<tr>
+    <td>Shipping</td>
+    <td><span class="underline">₹100 </span><span class="free">Free</span></td></tr>
+    <tr><td class="line">ORDER TOTAL</td>
+      <td class="line">₹${Math.floor(total - total / 100 * 30)}</td></tr></table>
+      <p class="you">YOU HAVE SAVED 30% ON THIS ORDER</p>
+      <p class="text">90 DAYS RETURN EXCLUSIVELY FOR GREENCARD MEMBER</p>
+      <button class="btnc">continue</button>`
+  }
+  else {
+    alert("Not vaild Coupon Code")
+  }
+  document.querySelector("#val").value = "";
+  document.querySelector(".btnc").addEventListener("click",function(){
+    window.location.href="address.html"
+    })
 }
 
 document.querySelector(".btnc").addEventListener("click",function(){
 window.location.href="address.html"
 })
+
+
+
+
+

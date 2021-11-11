@@ -241,7 +241,7 @@
       disc.setAttribute("id", "discStyle");
 
       var discPer = document.createElement("span");
-      discPer.textContent = item.discountPercentage;
+      discPer.textContent = item.discountPercentage + "% OFF";
       discPer.setAttribute("id", "discPerStyle");
 
       x.append(price, disc, discPer);
@@ -264,7 +264,7 @@
   }
 
   function remove(item) {
-    favdatas.splice(item, 1);
+    favdatas.splice(favdatas.indexOf(item), 1);
     localStorage.setItem("favdata", JSON.stringify(favdatas));
     window.location.reload(true);
   }

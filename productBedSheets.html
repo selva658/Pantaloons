@@ -402,7 +402,7 @@
 
   //  var imgDiv = document.createElement("div");
   //  imgDiv.setAttribute("id", "img");
-  showProducts(data);
+  showProducts(data)
 
 function sorting(){
  var price= document.querySelector("#filter").value;
@@ -442,9 +442,9 @@ var cartarr=JSON.parse(localStorage.getItem("datas")) || []
 var favarr=JSON.parse(localStorage.getItem("favdata")) || []
 console.log(cartarr);
 
-function showProducts() {
+function showProducts(productArray) {
   document.querySelector("#rimages").innerHTML=''
-  data.map(function (item) {
+  productArray.map(function (item) {
     var imgs = document.createElement("img");
     imgs.setAttribute("src", item.image_url);
     imgs.setAttribute("id", "imageSizing");

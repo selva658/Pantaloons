@@ -181,6 +181,8 @@
         <a href="favPage.html"><button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
         </button></a>
        <a  href="cart.html" ><button style="color: #0daa8b;" class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a> 
+        
+        </button>
       </div>
     </ul>
     <hr />
@@ -223,7 +225,7 @@
         <div id="desc">
           <p id="pageinfo" style="font-weight: 100">
             Latest Fashion Outfits<span class="quantityMain"
-              >32 Products</span
+              >4 Products</span
             >
           </p>
           <p class="para">
@@ -252,85 +254,12 @@
         </div>
       </div>
     </div>
-    <button id="cartBtn">Go to Cart</button>
   </body>
 </html>
 
 <script>
   var data = [
-    {
-      MRP: 699,
-      type: "PEOPLE",
-      dsc: "Navy Printed Polo T-Shirt",
-      discount: 1499,
-      discountPercentage: 60,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/552715-4523208.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "AJILE",
-      dsc: "Navy Melange Graphic Crew Neck T-Shirt",
-      discount: 1499,
-      discountPercentage: 60,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/3/344460-1670625.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Printed Mustard Kurta",
-      discount: 1499,
-      discountPercentage: 60,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/466269-3272732.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Solid Lime Green Kurta",
-      discount: 1499,
-      discountPercentage: 60,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/462288-3207430.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "BYFORD",
-      dsc: "Signal Red Stripe Polo T-Shirt",
-      discount: 1499,
-      discountPercentage: 60,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/474427-3392014.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "BYFORD",
-      dsc: "Navy Printed Polo T-Shirt",
-      discount: 699,
-      discountPercentage: "44% OFF",
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/474429-3392027.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "HONEY",
-      dsc: "Solid Teal Shorts",
-      discount: 999,
-      discountPercentage: 55,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/481621-3512485.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "BYFORD",
-      dsc: "Maroon Printed Polo T-Shirt",
-      discount: 999,
-      discountPercentage: 55,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/474425-3392002.jpg?w=313.38000000000005&auto=format",
-    },
-    {
+  {
       MRP: 699,
       type: "RANGMANCH",
       dsc: "Embroidered Coral Kurta",
@@ -340,255 +269,175 @@
         "https://pantaloons.imgix.net/img/app/product/4/467618-3291122.jpg?w=313.38000000000005&auto=format",
     },
     {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Maroon Textured Kurta",
-      discount: 1499,
-      discountPercentage: 50,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/583891-5275539.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "PEOPLE",
-      dsc: "Maroon Solid T-Shirt",
-      discount: 949,
-      discountPercentage: 47,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/544257-4374347.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "AJILE",
-      dsc: "Navy Melange Solid Crew Neck T-Shirt",
-      discount: 1999,
-      discountPercentage: 47,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/490813-3596976.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "BARE DENIM",
-      dsc: "Navy Stripe Crew Neck T-Shirt",
-      discount: 1999,
-      discountPercentage: 47,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/465520-3261851.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "BYFORD",
-      dsc: "Sky Blue Printed Polo T-Shirt",
-      discount: 799,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/481182-3510109.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Printed Lime Green Kurta",
-      discount: 999,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/461198-3191551.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Solid Mustard Kurta",
-      discount: 399,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/461196-3191542.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Solid Lime Green Kurta",
-      discount: 899,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/459129-3158255.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "INDUS ROUTE",
-      dsc: "Mustard Textured Kurta",
-      discount: 499,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/552850-4524072.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "PEOPLE",
-      dsc: "Black Solid T-Shirt",
-      discount: 899,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/5/544251-4374307.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "AJILE",
-      dsc: "Navy Mix & Match Crew Neck T-Shirt",
-      discount: 1499,
-      discountPercentage: 45,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/4/458967-3157278.jpg?w=313.38000000000005&auto=format",
-    },
-    {
-      MRP: 699,
-      type: "STREET ARMOR",
-      dsc: "Black T-Shirt",
-      discount: 799,
-      discountPercentage: 37,
-      image_url:
-        "https://pantaloons.imgix.net/img/app/product/6/618501-5935943.jpg?w=313.38000000000005&auto=format",
-    },
+    MRP: 999,
+    brand: "RANGMANCH",
+    type:"kurta",
+    dsc: "Red Kurta",
+    discount: 1699,
+    discountPercentage: 40,
+    image_url:
+      "https://pantaloons.imgix.net/img/app/product/6/621064-6129184.jpg?w=331.4666666666667&auto=format",
+  },
+  {
+    MRP: 599,
+    brand: "RANGMANCH",
+    type:"kurta",
+    dsc: "Blue Printed Kurta",
+    discount: 1000,
+    discountPercentage: 40,
+    image_url:
+      "https://pantaloons.imgix.net/img/app/product/6/621066-5983215.jpg?w=331.4666666666667&auto=format",
+  },
+  {
+    MRP: 1799,
+    brand: "RANGMANCH",
+    type:"kurta",
+    dsc: "Green Fancy Kurta",
+    discount: 1200,
+    discountPercentage: 40,
+    image_url:
+      "https://pantaloons.imgix.net/img/app/product/6/621054-6252416.jpg?w=331.4666666666667&auto=format",
+  },
   ];
 
-  //  var imgDiv = document.createElement("div");
+   //  var imgDiv = document.createElement("div");
   //  imgDiv.setAttribute("id", "img");
+  showProducts(data);
 
-  showProducts(data)
-
-  function sorting(){
-
-    // Price sorting logic
-   var price= document.querySelector("#filter").value;
-   if(price=="lowest")
-   {
-      var com =  data.sort(function(a,b){
-            return a.MRP-b.MRP
-        })
-    }
-    if(price=="highest")
-    {
-      var com=data.sort(function(a,b){
-        return b.MRP-a.MRP
+function sorting(){
+ var price= document.querySelector("#filter").value;
+ if(price=="lowest")
+ {
+    var com =  data.sort(function(a,b){
+          return a.MRP-b.MRP
       })
-    }
-
-    // Ascending & Descending logic
-    if(price=="asc")
-    {
-      var com=data.sort(function(a,b){
-       return a.type>b.type?1:b.type>a.type?-1:0
-      })
-    }
-
-    if(price=="des")
-    {
-      var com=data.sort(function(a,b){
-        return a.type>b.type?-1:b.type>a.type?1:0
-      })
-    }
-
-
-    showProducts(com)
+  }
+  if(price=="highest")
+  {
+    var com=data.sort(function(a,b){
+      return b.MRP-a.MRP
+    })
   }
 
-  var cartarr=JSON.parse(localStorage.getItem("datas")) || []
-  var favarr=JSON.parse(localStorage.getItem("favdata")) || []
-  console.log(cartarr);
+  if(price=="asc")
+  {
+    var com=data.sort(function(a,b){
+     return a.type>b.type?1:b.type>a.type?-1:0
+    })
+  }
 
-  function showProducts(productArray) {
-    document.getElementById("rimages").innerHTML ="";
-    productArray.map(function (item) {
-      var imgs = document.createElement("img");
-      imgs.setAttribute("src", item.image_url);
-      imgs.setAttribute("id", "imageSizing");
+  if(price=="des")
+  {
+    var com=data.sort(function(a,b){
+      return a.type>b.type?-1:b.type>a.type?1:0
+    })
+  }
 
-      var type = document.createElement("p");
-      type.textContent = item.type;
-      type.setAttribute("class", "paraStyle");
 
-      var description = document.createElement("p");
-      description.textContent = item.dsc;
-      description.setAttribute("class", "paraStyle1");
+  showProducts(com)
+}
 
-      var x = document.createElement("div");
-      x.setAttribute("id", "x");
 
-      var price = document.createElement("span");
-      price.textContent = "₹" + item.MRP;
-      price.setAttribute("class", "pricing69");
+var cartarr=JSON.parse(localStorage.getItem("datas")) || []
+var favarr=JSON.parse(localStorage.getItem("favdata")) || []
+console.log(cartarr);
 
-      var disc = document.createElement("span");
-      disc.textContent = "₹" + item.discount;
-      disc.setAttribute("id", "discStyle");
+function showProducts() {
+  document.querySelector("#rimages").innerHTML=''
+  data.map(function (item) {
+    var imgs = document.createElement("img");
+    imgs.setAttribute("src", item.image_url);
+    imgs.setAttribute("id", "imageSizing");
 
-      var discPer = document.createElement("span");
-      discPer.textContent = item.discountPercentage + "% OFF";
-      discPer.setAttribute("id", "discPerStyle");
+    var type = document.createElement("p");
+    type.textContent = item.type;
+    type.setAttribute("class", "paraStyle");
 
-      x.append(price);
+    var description = document.createElement("p");
+    description.textContent = item.dsc;
+    description.setAttribute("class", "paraStyle1");
 
-      // var btn = document.createElement("button");
-      // btn.textContent = "Add To Cart";
+    var x = document.createElement("div");
+    x.setAttribute("id", "x");
 
-      var imgDiv = document.createElement("div");
-      imgDiv.setAttribute("id", "img");
+    var price = document.createElement("span");
+    price.textContent = "₹" + item.MRP;
+    price.setAttribute("class", "pricing");
 
-      var btnsDiv = document.createElement("div");
+    var disc = document.createElement("span");
+    disc.textContent = "₹" + item.discount;
+    disc.setAttribute("id", "discStyle");
+
+    var discPer = document.createElement("span");
+    discPer.textContent = item.discountPercentage + "% OFF";
+    discPer.setAttribute("id", "discPerStyle");
+
+    x.append(price, disc, discPer);
+
+    var btn = document.createElement("button");
+    btn.textContent = "Add To Cart";
+
+    var imgDiv = document.createElement("div");
+    imgDiv.setAttribute("id", "img");
+
+    var btnsDiv = document.createElement("div");
     btnsDiv.setAttribute("id", "btnsDiv")
 
-      var cart = document.createElement("button");
-      cart.setAttribute("id", "AddToCart")
-      cart.addEventListener("click", function(){
-        addToCart(item)
-      })
-      cart.textContent = "Add To Cart";
+    var cart = document.createElement("button");
+    cart.addEventListener("click", function(){
+      addToCart(item)
+    })
+    cart.setAttribute("id", "AddToCart")
+    cart.textContent = "Add To Cart";
 
-      var btnfav=document.createElement("button")
+    var btnfav=document.createElement("button")
     btnfav.textContent="Add to Fav";
     btnfav.setAttribute("id", "favBtn")
     btnfav.addEventListener("click",function(){
       fav(item)
     })
 
-      btnsDiv.append(cart,btnfav);
+    btnsDiv.append(cart,btnfav);
 
-      imgDiv.append(imgs, type, description, x, btnsDiv);
+    imgDiv.append(imgs, type, description, x, btnsDiv);
 
-      document.getElementById("rimages").append(imgDiv);
-      // imgDiv.append(x);
-    });
-
-    // function cartRedirecting(){
-    //   window.location.href = "CartPage.html"
-    // }
-  }
-
-  function addToCart(item)
-  {
-    if(cartarr.includes(item))
-   {
-       alert("already add to chart")
-   }
-   else{
-       alert("Added")
-   }
-   cartarr.push(item)
-   localStorage.setItem("datas",JSON.stringify(cartarr))
-  }
-  document.querySelector("#cartBtn").addEventListener("click",function(){
-    window.location.href="cart.html"
+    document.getElementById("rimages").append(imgDiv);
+    // imgDiv.append(x);
   });
 
-  function fav(item)
-  {
-    if(favarr.includes(item))
-  {
-      alert("already added to wishlist")
-  }
-  else{
-      alert("Added to wishlist")
-  }
-    favarr.push(item)
-    localStorage.setItem("favdata",JSON.stringify(favarr))
-  }
+  // function cartRedirecting(){
+  //   window.location.href = "CartPage.html"
+  // }
 
+}
+
+function addToCart(item)
+{
+  if(cartarr.includes(item))
+ {
+     alert("already add to chart")
+ }
+ else{
+     alert("Added")
+ }
+ cartarr.push(item)
+ localStorage.setItem("datas",JSON.stringify(cartarr))
+}
+document.querySelector("#cartBtn").addEventListener("click",function(){
+  window.location.href="cart.html"
+})
+
+
+function fav(item)
+{
+  if(favarr.includes(item))
+ {
+     alert("already added to wishlist")
+ }
+ else{
+     alert("Added to wishlist")
+ }
+  favarr.push(item)
+  localStorage.setItem("favdata",JSON.stringify(favarr))
+}
 </script>

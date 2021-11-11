@@ -17,26 +17,6 @@ document.getElementById("hotDeals2").addEventListener("click", sunnyDays);
 document.getElementById("hotDeals3").addEventListener("click", ethnicVibes);
 
 
-// Js for Top Categories
-
-
-document.getElementById("Rkurta").addEventListener("click", rkurta);
-document.getElementById("RTees").addEventListener("click", rtees);
-document.getElementById("Rkids").addEventListener("click", rkids);
-
-function rkurta(){
-  window.location.href = "rangmunchKurta.html"
-}
-
-function rtees(){
-  window.location.href = "byfordTshirts.html"
-}
-
-function rkids(){
-  window.location.href = "ProductFrocks.html"
-}
-
-
 function bedSheets(){
   window.location.href = "productBedSheets.html";
 }
@@ -83,4 +63,22 @@ function sunnyDays (){
 
 function ethnicVibes (){
   window.location. href = "ProductEthnic.html"
+}
+
+
+// selva's work
+
+document.querySelector("#login").addEventListener("click", login)
+function login() {
+    window.location.href="login.html"
+}
+
+function profile() {
+    var ans = document.querySelector("#navprofile").value;
+    console.log(ans);
+    if (ans == "account")
+    {
+        window.location.href="myaccount.html"
+    }
+  
 }

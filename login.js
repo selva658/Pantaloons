@@ -25,7 +25,8 @@ function loginpage() {
         }
  
     }
-    
+     document.querySelector(".logintextbox").value="";
+     document.querySelector(".password").value="";
    
 }
 console.log(arr)

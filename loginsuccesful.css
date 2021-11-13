@@ -1,0 +1,38 @@
+#container{
+    border: 1px solid turquoise;
+    height: 250px;
+    width: 25%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.btnnext{
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: #00aa8a;
+    margin-bottom: 30px;
+    color: white;
+}
+.btnnext:hover{
+    background-color: rgb(11, 108, 90) ;
+    font-weight: 550;
+}
+
+
+p{
+font-size: 23px;
+color:#00aa8a;
+text-align: center;
+
+}
+
+img{
+height: 100px;
+margin-left: 130px;
+margin-top: 0px;
+}

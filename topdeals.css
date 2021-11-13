@@ -1,0 +1,92 @@
+body {
+  font-family: "gotham-book", sans-serif;
+  width: 100%;
+}
+#container {
+  /* border: 1px solid black; */
+  width: 78%;
+  /* margin: auto; */
+  /* margin: 35px; */
+  margin: auto;
+  margin-top: 45px; 
+}
+#top-deals {
+  width: 98%;
+  margin: auto;
+  /* border: 1px solid black; */
+  display: flex;
+  height: 320px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.img {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  margin: 5px;
+  margin: auto;
+}
+.header {
+  text-align: center;
+  margin-right: 10px;
+  color: rgb(50, 185, 164);
+  /* font-size: 36px; */
+  /* display: flex; */
+  font-weight: 540;
+}
+.header1 {
+  text-align: center;
+  font-weight: 100;
+  color: rgb(98, 97, 97);
+}
+.headings {
+  display: flex;
+  margin-left: 480px;
+}
+.headings1 {
+  display: flex;
+  margin-left: 430px;
+}
+.fashion-steals {
+  width: 340px;
+  height: 300px;
+  display: flex;
+  margin: 5px;
+  margin: auto;
+  padding-left: 7px;
+}
+#hot-deals {
+  width: 98%;
+  margin: auto;
+  /* border: 1px solid black; */
+  /* display: flex; */
+  height: 300px;
+  /* display: inline; */
+  /* grid-template-columns: auto auto auto auto; */
+}
+.hot {
+  /* border: 1px solid black; */
+  height: 280px;
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  line-height: 10px;
+  background-color: rgb(246, 246, 246);
+}
+.img-hot {
+  width: 100%;
+  height: 82%;
+}
+.txt {
+  text-align: center;
+  font-size: 14px;
+}
+.underline {
+  text-align: center;
+  font-size: 10px;
+  text-decoration: underline;
+}
+#posFix{
+  position: fixed;
+  /* margin-bottom: 100px; */
+}

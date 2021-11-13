@@ -1,0 +1,256 @@
+
+#Kcontainer {
+    display: grid; 
+    width: 100%;
+    
+}
+.Khead{
+   
+   /* margin-left: 40%;  */
+    color: rgb(48,173,154);
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+}
+#Kbox{
+    display: grid;
+    grid-template-columns: 320px 440px;
+    /* grid-template-rows: 300px; */
+    column-gap: 160px;
+    margin: 80px 0px 0px 120px ;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgb(248, 248, 248);
+    width: 50%;
+   height: 200px;  
+}
+.Kh1{
+    line-height: 30px;
+}
+#Kcon{
+    height: 250px;
+}
+
+.Kbox{
+     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+width: 200%;
+height: 80%;
+margin-left: 40%;
+
+    
+}
+.Kimg{
+    margin-top: 10%;
+     height: 90%;
+     margin-left: 47%;
+}
+.Kp{
+    color: hsl(0, 0%, 50%);
+    font-size: 16px;
+    width:60%;
+}
+ .Kemail{
+     border: 1px solid rgb(48,173,154);
+     height: 200px;
+     width: 100%;
+     margin-top: 170px;
+     background-color: rgb(48,173,154);
+     /* margin: auto; */
+     /* margin-left: 50%; */
+ }
+.Kebox{
+    
+    height: 80%;
+    width: 40%;
+    margin: auto;
+    margin-top: 25px;
+}
+#Kspan{
+    font-size: 18px;
+    color: white;
+    margin-left: 2px;
+}
+.Ksp
+{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+   
+}
+.Kbold{
+    font-weight: bolder;
+    
+}
+.Ketype{
+    width: 50%;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 20px ;
+    border: none;
+    margin-left: 130px;
+    /* margin: auto; */
+}
+.Ketype:hover{
+  border: 2px solid thistle;
+}
+.Karrow{
+    width: 50px;
+    height: 43px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 208, 0);
+    background-color: rgb(255, 208, 0);
+}
+.Karrow:hover{
+   background-color: rgb(45, 216, 99);
+}
+.Ksicon{
+    margin-bottom: 45px;
+ 
+    /* margin-left: 1%; */
+    
+}
+
+ #Kright{
+     font-size: 60px;
+ }
+
+
+.Kimgbox{
+    
+    display: inline-block;
+    width: 100px;
+    height: 90px;
+    margin-top: 50px;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+
+#Kicon{
+    color: rgb(68, 67, 67);
+    font-size: 50px;
+    margin-left: 50px;  
+    color: #3a3434;
+}
+#Kicon:hover{
+    color: #30ad9a;
+}
+a{
+    text-decoration: none;
+}
+.Kicontext{
+    
+    font-size: 11px;
+    margin-top: 25px;
+    color: rgb(83, 81, 81);
+    /* border: 1px solid red; */
+    width: 120%;
+    margin-left: 15px;
+    text-align: center;
+}
+.Kicontext:hover{
+    color:#30ad9a;
+}
+#Krefund{
+    border:1px solid rgb(105, 102, 102);
+    text-align: center;
+    height: 30px; 
+    padding-top: 20px;  
+
+}
+#Kimgbox{
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 100px;
+   
+}
+#Kadi{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.Ktable,.Ktable1{
+    
+    width: 180px;
+    height: 10px;
+    font-size: 12px;
+    text-align: start;
+    line-height: 30px;
+  
+    
+}
+#Kstab
+{
+    border: 1px solid red;
+    
+}
+
+.Ktable1{
+    font-weight: bold;
+    font-size: 16px;
+    width: 400px;
+}
+.Ktd{
+    color: rgb(83, 81, 81);
+    font-size: 11px;
+    text-decoration: none;
+    
+    
+}
+.Ktd:focus{
+    color: skyblue;
+}
+
+#khr{
+    margin-top: 100px;
+}
+#Klasthead{
+    color: rgb(117, 95, 95);
+    margin: 50px 0px;
+}
+#Klastp{
+    color: rgb(131, 128, 128);
+    font-size: 14px;
+   font-weight: 400;
+    line-height: 20px;
+}
+#Klastbox{
+    
+    min-height: 100px;
+    max-width: 90%;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.Klasta{
+    color: skyblue;
+    text-decoration:underline;
+}
+.Klasta1{
+    margin-left: 20px;
+    color: rgb(68, 67, 67);
+}
+#Klasticon{
+    font-size: 40px;
+    margin-left: 190px;
+}
+
+#Klin,#Kyou,#Ktw,#Kfb{
+    margin-left: 30px;
+    border: 1px solid red;
+    height: 10px;
+    width: 10px;
+   padding: 10px;
+   border-radius: 50px;
+   border: 1px solid grey;
+}
+#Kfb{
+    margin-left: 15%;
+}
+#Klin:hover,#Kyou:hover,#Ktw:hover,#Kfb:hover{
+    background-color: #30ad9a;
+    color: white;
+    border: none;
+}

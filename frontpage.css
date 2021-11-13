@@ -1,5 +1,6 @@
 body{
     margin:0px;
+    overflow-x: hidden;
 }
 #top{
     height: 15px;
@@ -330,3 +331,6 @@ margin-top: 0px;
 
 
 /* -----------------------------------------------------------mainpage end-------------------------------------------- */
+.img,.fashion-steals{
+    cursor: pointer;
+}

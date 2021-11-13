@@ -1,5 +1,6 @@
 body {
   font-family: "gotham-book", sans-serif;
+  width: 100%;
 }
 #container {
   /* border: 1px solid black; */
@@ -84,4 +85,8 @@ body {
   text-align: center;
   font-size: 10px;
   text-decoration: underline;
+}
+#posFix{
+  position: fixed;
+  /* margin-bottom: 100px; */
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Products Page</title>
     <link
       href="https://www.dafontfree.net/embed/Z290aGFtLWJvb2smZGF0YS8yNS9nLzEyNzUxOC9Hb3RoYW1Cb29rLnR0Zg"
       rel="stylesheet"
@@ -137,7 +137,8 @@
         <div><a href=""><p  class="sp"><span >GREENCARD</span><span class="move">TRACK ORDER</span><span class="move">STORE LOCATOR </span><span class="move">CONTACT US</span></p></a>
          <input class="search" type="text" placeholder="Search.." name="search">
          <button class="searchicon" type="submit"><i class="fa fa-search"></i></button>
-         <button id="login"  class="btn_design"><i class="fa fa-user-circle-o" aria-hidden="true"></i><p class="lo">Login</p></button>
+         <button id="login"  class="btn_design"><i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
+          <!-- <p class="lo">Login</p> -->
          
          <select id="navprofile" onchange="profile()">
            <option value=""></option>
@@ -148,7 +149,7 @@
          </select>
          <a href="favPage.html"><button class="btn_design"><i class="fa fa-heart-o" aria-hidden="true"></i>
          </button></a>
-        <a  href="cart.html" ><button style="color: #0daa8b;" class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a> 
+        <a  href="cart.html" ><button style="color: #0daa8b;" class="btn_design"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button></a>
         
         
         </div>
@@ -203,7 +204,7 @@
         </div>
       </div>
     </div>
-    <button id="cartBtn">Go to Cart</button>
+    <!-- <button id="cartBtn">Go to Cart</button> -->
   </body>
 </html>
 
@@ -523,9 +524,9 @@ function addToCart(item)
  cartarr.push(item)
  localStorage.setItem("datas",JSON.stringify(cartarr))
 }
-document.querySelector("#cartBtn").addEventListener("click",function(){
-  window.location.href="cart.html"
-})
+// document.querySelector("#cartBtn").addEventListener("click",function(){
+//   window.location.href="cart.html"
+// })
 
 
 function fav(item)

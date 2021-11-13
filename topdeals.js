@@ -24,6 +24,13 @@ document.getElementById("Rkurta").addEventListener("click", rkurta);
 document.getElementById("RTees").addEventListener("click", rtees);
 document.getElementById("Rkids").addEventListener("click", rkids);
 
+
+document.getElementById("navTees").addEventListener("click", navtees);
+
+function navtees(){
+  window.location.href = "navProds.html"
+}
+
 function rkurta(){
   window.location.href = "rangmunchKurta.html"
 }
@@ -84,3 +91,21 @@ function sunnyDays (){
 function ethnicVibes (){
   window.location. href = "ProductEthnic.html"
 }
+
+// Selva's Work on login
+
+document.querySelector("#login").addEventListener("click", login)
+function login() {
+    window.location.href="login.html"
+}
+
+function profile() {
+    var ans = document.querySelector("#navprofile").value;
+    console.log(ans);
+    if (ans == "account")
+    {
+        window.location.href="myaccount.html"
+    }
+  
+}
+

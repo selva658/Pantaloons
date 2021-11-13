@@ -18,6 +18,10 @@
     margin-bottom: 30px;
     color: white;
 }
+.btnnext:hover{
+    background-color: rgb(11, 108, 90) ;
+    font-weight: 550;
+}
 
 
 p{

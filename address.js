@@ -1,5 +1,5 @@
 document.querySelector(".btnaddress").addEventListener("click", function () {
-    alert("address added successfully")
+    alert("Address Added Successfully")
     window.location.href="payment.html"
 })
 

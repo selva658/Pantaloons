@@ -1,29 +1,32 @@
-document.querySelector(".btnnext").addEventListener("click",login)
-    var usermailarr=JSON.parse(localStorage.getItem("usermaildetails")) || []
-  
-    function login(){
-        var mail=document.querySelector(".logintextbox").value;
-        var usermailobj={
-            usermail:mail,
+document.querySelector(".singup").addEventListener("click", singuppage)
+
+function singuppage() {
+    window.location.href="singup.html"
+}
+
+document.querySelector(".btnnext").addEventListener("click", loginpage)
+
+var arr=JSON.parse(localStorage.getItem("details"));
+function loginpage() {
+    var mail = document.querySelector(".logintextbox").value;
+    var pass = document.querySelector(".password").value;
+    for (var i = 0; i < arr.length; i++)
+    {
+       
+         if (arr[i].itemname == mail && arr[i].itempassword == pass)
+        {
+            alert("Login Successfull")
+             window.location.href = "riyazFront.html";
+             break;
         }
-
-          usermailarr.push(usermailobj)
-          localStorage.setItem("usermaildetails",JSON.stringify(usermailarr));
-
-          for(var i=0;i<usermailarr.length;i++)
-          {
-              if(usermailarr[i].usermail==mail)
-              {
-                  alert("Welcome back")
-                  window.location.href="frontpage.html"
-                  break;
-                 
-              }
-              else{
-                  alert("new user")
-                  window.location.href="login2part.html"
-                  break;
-              }
-          }
-        
+        if (arr[i].itemname != mail && arr[i].itempassword != pass)
+        {
+            document.querySelector(".dis").innerHTML=`<h1>Invalid userID or Password</h1>`
+        }
+ 
     }
+     document.querySelector(".logintextbox").value="";
+     document.querySelector(".password").value="";
+   
+}
+console.log(arr)

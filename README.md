@@ -2,10 +2,10 @@ This is the clone of Pantaloons.com. We started this project as a four member te
 <h1>Table of contents</h1>
 <hr>
 <ul>
-  <li>Basic inference about the company</li>
-  <li>Frameworks Used</li>
-  <li>Added Functionalities</li>
-  <li>added Features</li>
-  <li>Contributors</li>
-  <li>Glimps of our work</li>
+  <a href=""><li>Basic inference about the company</li></a>
+  <a href=""><li>Frameworks Used</li></a>
+  <a href=""><li>Added Functionalities</li></a>
+  <a href=""><li>added Features</li></a>
+  <a href=""><li>Contributors</li></a>
+  <a href=""><li>Glimps of our work</li></a>
 </ul>

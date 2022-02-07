@@ -45,21 +45,26 @@ Pantaloons is one of India's largest fast fashion store brand. The Company also 
     <li>Coupen Code(for discount%)</li>
   </ul>
   </div>
-  <div id="con>
-  <h1>Contributors</h1>
-  <hr>
-  <ul>
-  <a href="https://github.com/ShaikRiyazuddin"><li>Shaik Riyazuddin</li></a>
+  <div id="con">
+    <h1>Contributors</h1>
+    <hr>
+    <ul>
+      <a href="https://github.com/ShaikRiyazuddin"><li>Shaik Riyazuddin</li></a>
   <a href="https://github.com/selva658"><li>Selvakumar P</li></a>
   <a href="https://github.com/nawaz2508"><li>Mohd Nawaz Khan</li></a>
    <a href=""><li>Karthick</li></a>
-  </ul>
-             </div>
-             <div id="glimps">
+    </ul>
+    </div>
+  <div id="glimps">
   <h1>Glimps of our work</h1>
   <hr>
   <div>
   <img style="width:100%" src="https://scontent.fcjb5-1.fna.fbcdn.net/v/t39.30808-6/p180x540/272663573_1155151781688006_3652306198374054445_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=VdRmblkcpxsAX_OW1QE&tn=QL5AAqKT3A_WAzar&_nc_ht=scontent.fcjb5-1.fna&oh=00_AT90rv1Ll6zT63nyNaTxkrkCsNtMpbvp8XMmdc4Edd9vfw&oe=62059CA7"/>
   </div>
 </div>
+    
+    
+    
+    
+    
 

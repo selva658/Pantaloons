@@ -1,0 +1,1 @@
+This is the clone of Pantaloons.com. We started this project as a four member team during construct week organised at Masai School, Bengaluru, Karnataka. You can find the project demo <a href="https://selva658.github.io/Pantaloons/">here.</a>

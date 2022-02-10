@@ -42,7 +42,7 @@ Pantaloons is one of India's largest fast fashion store brand. The Company also 
     <li>Sorting</li>
     <li>Filtering</li>
     <li>Add to Favourites</li>
-    <li>Coupen Code(for discount%)</li>
+    <li>Coupon Code(for discount%)</li>
   </ul>
   </div>
   <div id="con">
